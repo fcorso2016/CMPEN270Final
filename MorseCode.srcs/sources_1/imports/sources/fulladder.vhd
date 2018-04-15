@@ -42,47 +42,28 @@ architecture fulladder_a of fulladder is
 	--------------------------------------------------------
 	-- Component Declarations 
 	-------------------------------------------------------
-	component dff270_r is port
-        ( 
-            clk     : in std_logic ;
-            rst     : in std_logic ;
-            d       : in std_logic ;
-            q       : out std_logic
-         );
-     end component;
+
+        -- NONE
 	
 	-------------------------------------------------------
 	-- Internal Signal Declarations
 	-------------------------------------------------------
-	signal Cout_int : std_logic;
-	signal Sum_int  : std_logic;
+
+        -- NONE
 
 begin
 	
 	-------------------------------------------------------
 	-- Component Instantiations
-	-------------------------------------------------------
-	cout_latch : dff270_r port map
-	   (
-	   clk => clk,
-	   rst => rst,
-	   d  => Cout_int,
-	   q  => Cout
-	   ); 
-	    
-	sum_latch : dff270_r port map
-          (                          
-          clk => clk,                
-          rst => rst,                
-          d  => Sum_int,            
-          q  => Sum                 
-          );                                               
+	-------------------------------------------------------                                        
+        
+        -- NONE
         
 	-------------------------------------------------------------
 	-- Begin Design Description of Gates and how to connect them
 	-------------------------------------------------------------
 
-	Cout_int <= (A AND B) OR (Cin AND (A XOR B) );
-	Sum_int <= (A XOR B) XOR Cin;
+	Cout <= (A AND B) OR (Cin AND (A XOR B) );
+	Sum <= (A XOR B) XOR Cin;
  			 
 end fulladder_a; -- .same name as the architecture

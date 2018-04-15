@@ -1,10 +1,11 @@
 ------------ HEADER ------------------------------------------------------------------------------------------------- 
--- Date				: 3/26/18
--- Lab # and name	: Lab 7 Tug of war
--- Student 1		: Cody Wiley
--- Student 2		: 
+-- Date				: 4/15/18
+-- Lab # and name	: Lab 9 - Final Project
+-- Student 1		: Francesco Corso
+-- Student 2		: Sam Schultz
+-- Student 3        : Cody Wiley
 
--- Description		: LSFR portion of lab 7
+-- Description		: A 4 bit counter
 
 
 -- Changes 
@@ -23,8 +24,8 @@ use ieee.std_logic_1164.all;
 
 entity fourBitCounter is port
 	( 
-		rst, clk  : in std_logic		; 	-- input description comment			
-		s3, s2, s1, s0 : out std_logic			-- output description comment	
+		rst, clk, count  : in std_logic;
+		s3, s2, s1, s0 : out std_logic
 	);
 end fourBitCounter;
 ----------------------------------------------------------------------
@@ -36,72 +37,71 @@ architecture fourBitCounter_a of fourBitCounter is
 	--------------------------------------------------------
 	-- Component Declarations 
 	-------------------------------------------------------
-component DFF270_re is port
-(
-		clk 	: in std_logic ;
-        clken    : in std_logic ;
-        rst     : in std_logic ;
-        d     : in std_logic ;
-        q     : out std_logic
-);
-end component;
+    component DFF270_re is port
+        (
+		    clk 	: in std_logic ;
+            clken   : in std_logic ;
+            rst     : in std_logic ;
+            d       : in std_logic ;
+            q       : out std_logic
+        );
+    end component;
 
-component fulladder is port
-    (
-        Cin                : in std_logic;
-        A                     : in std_logic;
-        B                     : in std_logic;
-        Cout                  : out std_logic;
-        Sum                   : out std_logic    
-    );
-end component;
+    component fulladder is port
+        (
+            Cin                   : in std_logic;
+            A                     : in std_logic;
+            B                     : in std_logic;
+            Cout                  : out std_logic;
+            Sum                   : out std_logic    
+        );
+    end component;
 
 	-------------------------------------------------------
 	-- Internal Signal Declarations
 	-------------------------------------------------------
-signal b0, b1, b2, b3: std_logic;
-signal s_int0, s_int1, s_int2, s_int3 : std_logic;
-signal co0, co1, co2, co3, LButton, RButton, LNeighbor, RNeighbor : std_logic;	
+    signal b0, b1, b2, b3: std_logic;
+    signal s_int0, s_int1, s_int2, s_int3 : std_logic;
+    signal co0, co1, co2, co3, LButton, RButton, LNeighbor, RNeighbor : std_logic;	
 
 begin
 	
 	-------------------------------------------------------
 	-- Component Instantiations
 	-------------------------------------------------------
-
-fadder1: fulladder port map
-    ( 
-    cin =>'0',
-    A => '1',
-    B => b0,
-    Sum => s_int0,
-    Cout => co0
-    );
-    
-fadder2: fulladder port map
+    fadder1: fulladder port map
         ( 
-        cin =>co0,
-        A => '0',
-        B => b1,
-        Sum => s_int1,
-        Cout => co1
+        cin =>'0',
+        A => count,
+        B => b0,
+        Sum => s_int0,
+        Cout => co0
         );
-fadder3: fulladder port map
-            ( 
+    
+    fadder2: fulladder port map
+        ( 
+            cin =>co0,
+            A => '0',
+            B => b1,
+            Sum => s_int1,
+            Cout => co1
+        );
+    fadder3: fulladder port map
+        ( 
             cin =>co1,
             A => '0',
             B => b2,
             Sum => s_int2,
             Cout => co2
-            );
-fadder4: fulladder port map
-                ( 
-                cin =>co2,
-                A => '0',
-                B => b3,
-                Sum => s_int3,
-                Cout => co3
-                );
+        );
+    fadder4: fulladder port map
+        ( 
+            cin =>co2,
+            A => '0',
+            B => b3,
+            Sum => s_int3,
+            Cout => co3
+         );
                 
      result0 : DFF270_re port map
         (

@@ -1,10 +1,11 @@
 ------------ HEADER ------------------------------------------------------------------------------------------------- 
--- Date				: 
--- Lab # and name	: 
--- Student 1		: 
--- Student 2		: 
+-- Date				: 4/15/18
+-- Lab # and name	: Lab 9 - Final Project
+-- Student 1		: Francesco Corso
+-- Student 2		: Sam Schultz
+-- Student 3        : Cody Wiley
 
--- Description		: 
+-- Description		: A 4 to 1 MUX
 
 
 -- Changes 
@@ -25,9 +26,9 @@ use ieee.std_logic_1164.all;
 
 entity MUX is port
 	( 
-		s1, s0	: in std_logic		; 	-- input description comment	
-		d0,d1,d2,d3 : std_logic;		
-		myout  	: out std_logic			-- output description comment	
+		s1, s0      	: in std_logic;
+		d0, d1, d2, d3  : in std_logic;
+		myout  	        : out std_logic
 	);
 end MUX;
 ----------------------------------------------------------------------

@@ -1,10 +1,11 @@
 ------------ HEADER ------------------------------------------------------------------------------------------------- 
--- Date				: 3/20/18
--- Lab # and name	: 	Lab 7 - Tug of War
--- Student 1		: 	Samantha Schultz
--- Student 2		: 	Frank Corso
+-- Date				: 4/15/18
+-- Lab # and name	: Lab 9 - Final Project
+-- Student 1		: Francesco Corso
+-- Student 2		: Sam Schultz
+-- Student 3        : Cody Wiley
 
--- Description		: 
+-- Description		: A 1 bit full adder
 
 
 -- Changes 

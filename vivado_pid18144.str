@@ -153,3 +153,222 @@ selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthe
 // f (ch): Launch Runs: addNotify
 // 'k' command handler elapsed time: 4 seconds
 dismissDialog("Launch Runs"); // f (ch)
+// Elapsed time: 105 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(toplevel_a) (toplevel.vhd)]", 4, false); // B (D, ch)
+// Elapsed time: 90 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fourBitCounter(fourBitCounter_a) (counter.vhd)]", 1); // B (D, ch)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fourBitCounter(fourBitCounter_a) (counter.vhd)]", 1); // B (D, ch)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, userinput(userinput_a) (userinput.vhd)]", 2); // B (D, ch)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, userinput(userinput_a) (userinput.vhd)]", 2); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX(MUX_a) (MUX.vhd)]", 3, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel(toplevel_a) (toplevel.vhd)]", 4, false); // B (D, ch)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 7, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 7, false, false, false, false, false, true); // B (D, ch) - Double Click
+// [Engine Memory]: 678 MB (+250kb) [00:09:40]
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// HMemoryUtils.trashcanNow. Engine heap size: 678 MB. GUI used memory: 44 MB. Current time: 4/15/18 7:14:23 PM EDT
+// Elapsed time: 34 seconds
+selectCodeEditor("MUX.vhd", 386, 239); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 268, 299); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 244, 317); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 243, 330); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 75, 328); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 107, 332); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 135, 332); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 169, 244); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 142, 329); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 105, 314); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 162, 331); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 110, 349); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 307, 316); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 274, 313); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 562, 344); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 279, 345); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 270, 347); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 326, 325); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 324, 313); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 288, 335); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 283, 348); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 260, 327); // cd (w, ch)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("MUX.vhd", 174, 28); // cd (w, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 38 seconds
+selectCodeEditor("MUX.vhd", 157, 129); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 89, 154); // cd (w, ch)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("MUX.vhd", 261, 95); // cd (w, ch)
+typeControlKey((HResource) null, "MUX.vhd", 'c'); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fulladder.vhd", 2); // k (j, ch)
+selectCodeEditor("fulladder.vhd", 275, 82); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX.vhd", 3); // k (j, ch)
+selectCodeEditor("MUX.vhd", 228, 36); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 194, 45); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 182, 39); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 192, 39); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 214, 43); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fulladder.vhd", 2); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX.vhd", 3); // k (j, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U (q, ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U (q, ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U (q, ch)
+selectCodeEditor("MUX.vhd", 231, 70); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 188, 43); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 207, 42); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 249, 98); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 249, 100); // cd (w, ch)
+typeControlKey((HResource) null, "MUX.vhd", 'c'); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fulladder.vhd", 2); // k (j, ch)
+selectCodeEditor("fulladder.vhd", 274, 79); // cd (w, ch)
+typeControlKey((HResource) null, "fulladder.vhd", 'v'); // cd (w, ch)
+selectCodeEditor("fulladder.vhd", 175, 125); // cd (w, ch)
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fourBitCounter(fourBitCounter_a) (counter.vhd)]", 1); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fourBitCounter(fourBitCounter_a) (counter.vhd)]", 1, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fourBitCounter(fourBitCounter_a) (counter.vhd)]", 1, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX.vhd", 3); // k (j, ch)
+selectCodeEditor("MUX.vhd", 270, 83); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 245, 86); // cd (w, ch)
+typeControlKey((HResource) null, "MUX.vhd", 'c'); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.vhd", 4); // k (j, ch)
+selectCodeEditor("counter.vhd", 247, 78); // cd (w, ch)
+typeControlKey((HResource) null, "counter.vhd", 'v'); // cd (w, ch)
+selectCodeEditor("counter.vhd", 153, 130); // cd (w, ch)
+selectCodeEditor("counter.vhd", 110, 454); // cd (w, ch)
+selectCodeEditor("counter.vhd", 59, 367); // cd (w, ch)
+selectCodeEditor("counter.vhd", 90, 360); // cd (w, ch)
+selectCodeEditor("counter.vhd", 83, 363); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fulladder.vhd", 2); // k (j, ch)
+selectCodeEditor("fulladder.vhd", 327, 281); // cd (w, ch)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ch)
+// [GUI Memory]: 97 MB (+1309kb) [00:13:37]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX.vhd", 3); // k (j, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("MUX.vhd", 273, 280); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 357, 295); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 275, 315); // cd (w, ch)
+selectCodeEditor("MUX.vhd", 181, 293); // cd (w, ch)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.vhd", 4); // k (j, ch)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("counter.vhd", 307, 196); // cd (w, ch)
+selectCodeEditor("counter.vhd", 285, 198); // cd (w, ch)
+selectCodeEditor("counter.vhd", 558, 212); // cd (w, ch)
+selectCodeEditor("counter.vhd", 3, 153); // cd (w, ch)
+selectCodeEditor("counter.vhd", 3, 178, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("counter.vhd", 3, 180); // cd (w, ch)
+selectCodeEditor("counter.vhd", 3, 279); // cd (w, ch)
+selectCodeEditor("counter.vhd", 55, 265); // cd (w, ch)
+selectCodeEditor("counter.vhd", 55, 256); // cd (w, ch)
+selectCodeEditor("counter.vhd", 100, 261); // cd (w, ch)
+selectCodeEditor("counter.vhd", 107, 263); // cd (w, ch)
+selectCodeEditor("counter.vhd", 54, 249); // cd (w, ch)
+selectCodeEditor("counter.vhd", 133, 269); // cd (w, ch)
+selectCodeEditor("counter.vhd", 53, 245); // cd (w, ch)
+selectCodeEditor("counter.vhd", 60, 224); // cd (w, ch)
+selectCodeEditor("counter.vhd", 53, 230); // cd (w, ch)
+selectCodeEditor("counter.vhd", 57, 212); // cd (w, ch)
+selectCodeEditor("counter.vhd", 53, 195); // cd (w, ch)
+selectCodeEditor("counter.vhd", 146, 208); // cd (w, ch)
+selectCodeEditor("counter.vhd", 140, 231); // cd (w, ch)
+selectCodeEditor("counter.vhd", 130, 246); // cd (w, ch)
+selectCodeEditor("counter.vhd", 137, 231); // cd (w, ch)
+selectCodeEditor("counter.vhd", 143, 244); // cd (w, ch)
+selectCodeEditor("counter.vhd", 134, 228); // cd (w, ch)
+selectCodeEditor("counter.vhd", 123, 247); // cd (w, ch)
+selectCodeEditor("counter.vhd", 122, 260); // cd (w, ch)
+selectCodeEditor("counter.vhd", 3, 297); // cd (w, ch)
+selectCodeEditor("counter.vhd", 3, 334); // cd (w, ch)
+selectCodeEditor("counter.vhd", 28, 345); // cd (w, ch)
+selectCodeEditor("counter.vhd", 4, 467); // cd (w, ch)
+selectCodeEditor("counter.vhd", 0, 469); // cd (w, ch)
+selectCodeEditor("counter.vhd", 27, 448); // cd (w, ch)
+selectCodeEditor("counter.vhd", 55, 437); // cd (w, ch)
+selectCodeEditor("counter.vhd", 55, 422); // cd (w, ch)
+selectCodeEditor("counter.vhd", 56, 401); // cd (w, ch)
+selectCodeEditor("counter.vhd", 58, 383); // cd (w, ch)
+selectCodeEditor("counter.vhd", 59, 361); // cd (w, ch)
+selectCodeEditor("counter.vhd", 207, 208); // cd (w, ch)
+selectCodeEditor("counter.vhd", 3, 398); // cd (w, ch)
+selectCodeEditor("counter.vhd", 0, 421); // cd (w, ch)
+selectCodeEditor("counter.vhd", 0, 431, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("counter.vhd", 2, 434); // cd (w, ch)
+selectCodeEditor("counter.vhd", 0, 318); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fulladder.vhd", 2); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "toplevel.vhd", 1); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MUX.vhd", 3); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.vhd", 4); // k (j, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, userinput(userinput_a) (userinput.vhd)]", 2, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, userinput(userinput_a) (userinput.vhd)]", 2, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, userinput(userinput_a) (userinput.vhd)]", 2, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.vhd", 4); // k (j, ch)
+selectCodeEditor("counter.vhd", 2, 110); // cd (w, ch)
+selectCodeEditor("counter.vhd", 29, 127); // cd (w, ch)
+selectCodeEditor("counter.vhd", 29, 143); // cd (w, ch)
+selectCodeEditor("counter.vhd", 26, 163); // cd (w, ch)
+selectCodeEditor("counter.vhd", 25, 176); // cd (w, ch)
+selectCodeEditor("counter.vhd", 25, 192); // cd (w, ch)
+selectCodeEditor("counter.vhd", 28, 211); // cd (w, ch)
+selectCodeEditor("counter.vhd", 25, 233); // cd (w, ch)
+selectCodeEditor("counter.vhd", 1, 267); // cd (w, ch)
+selectCodeEditor("counter.vhd", 54, 281); // cd (w, ch)
+selectCodeEditor("counter.vhd", 56, 303); // cd (w, ch)
+selectCodeEditor("counter.vhd", 56, 312); // cd (w, ch)
+selectCodeEditor("counter.vhd", 58, 330); // cd (w, ch)
+selectCodeEditor("counter.vhd", 57, 350); // cd (w, ch)
+selectCodeEditor("counter.vhd", 57, 361); // cd (w, ch)
+selectCodeEditor("counter.vhd", 2, 403); // cd (w, ch)
+selectCodeEditor("counter.vhd", 83, 322); // cd (w, ch)
+// [GUI Memory]: 102 MB (+51kb) [00:15:29]
+selectCodeEditor("counter.vhd", 81, 419); // cd (w, ch)
+selectCodeEditor("counter.vhd", 2, 436); // cd (w, ch)
+selectCodeEditor("counter.vhd", 116, 295); // cd (w, ch)
+selectCodeEditor("counter.vhd", 113, 196); // cd (w, ch)
+selectCodeEditor("counter.vhd", 111, 210); // cd (w, ch)
+selectCodeEditor("counter.vhd", 112, 234); // cd (w, ch)
+selectCodeEditor("counter.vhd", 107, 241); // cd (w, ch)
+selectCodeEditor("counter.vhd", 113, 264); // cd (w, ch)
+selectCodeEditor("counter.vhd", 115, 282); // cd (w, ch)
+selectCodeEditor("counter.vhd", 114, 294); // cd (w, ch)
+// Elapsed time: 10 seconds
+selectCodeEditor("counter.vhd", 25, 200); // cd (w, ch)
+selectCodeEditor("counter.vhd", 29, 192); // cd (w, ch)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MUX(MUX_a) (MUX.vhd)]", 3, false); // B (D, ch)
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fourBitCounter(fourBitCounter_a) (counter.vhd)]", 1); // B (D, ch)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fourBitCounter(fourBitCounter_a) (counter.vhd)]", 1); // B (D, ch)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, userinput(userinput_a) (userinput.vhd)]", 2); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, userinput(userinput_a) (userinput.vhd), latch1 : dff270_re(dff270_re_a) (DFF270_re.vhd)]", 3, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, userinput(userinput_a) (userinput.vhd), latch1 : dff270_re(dff270_re_a) (DFF270_re.vhd)]", 3, false, false, false, false, false, true); // B (D, ch) - Double Click
+// Elapsed time: 15 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fourBitCounter(fourBitCounter_a) (counter.vhd)]", 1); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fourBitCounter(fourBitCounter_a) (counter.vhd), fadder1 : fulladder(fulladder_a) (fulladder.vhd)]", 2, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fourBitCounter(fourBitCounter_a) (counter.vhd), fadder1 : fulladder(fulladder_a) (fulladder.vhd)]", 2, false, false, false, false, false, true); // B (D, ch) - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fourBitCounter(fourBitCounter_a) (counter.vhd)]", 1); // B (D, ch)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, userinput(userinput_a) (userinput.vhd)]", 2); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, userinput(userinput_a) (userinput.vhd)]", 2, true); // B (D, ch) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, userinput(userinput_a) (userinput.vhd)]", 2); // B (D, ch)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, userinput(userinput_a) (userinput.vhd)]", 2); // B (D, ch)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fourBitCounter(fourBitCounter_a) (counter.vhd)]", 1); // B (D, ch)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fourBitCounter(fourBitCounter_a) (counter.vhd)]", 1); // B (D, ch)

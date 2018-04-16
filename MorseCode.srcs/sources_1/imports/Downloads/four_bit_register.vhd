@@ -1,11 +1,11 @@
 ------------ HEADER ------------------------------------------------------------------------------------------------- 
--- Date				: 4/15/18
+-- Date				: 4/16/18
 -- Lab # and name	: Lab 9 - Final Project
 -- Student 1		: Francesco Corso
 -- Student 2		: Sam Schultz
 -- Student 3        : Cody Wiley
 
--- Description		: A 1 bit full adder
+-- Description		: 4-bit register
 
 
 -- Changes 
@@ -23,48 +23,78 @@ use ieee.std_logic_1164.all;
 ----------------------------------------------------------------------
 
 -- Entity 
-
-entity fulladder is port
-    (
-        Cin              : in std_logic;
-        A                     : in std_logic;
-        B                     : in std_logic;
-        Cout                  : out std_logic;
-        Sum                   : out std_logic
-     
-    );
-end fulladder;
+entity four_bit_register is port
+	( 
+		rst, clk, clken, input	: in std_logic		; 				
+		ps0,ps1,ps2,ps3  	: out std_logic				
+	);
+end four_bit_register;
 ----------------------------------------------------------------------
 
 -- Architecture 
-architecture fulladder_a of fulladder is
+architecture four_bit_register_a of four_bit_register is
 ----------------------------------------------------------------------
 
 	--------------------------------------------------------
 	-- Component Declarations 
 	-------------------------------------------------------
+   component dff270_re is port
+   (
+        clken,clk,rst,d : in std_logic;
+        q           : out std_logic
+   );
+   end component;
+        
 
-        -- NONE
 	
 	-------------------------------------------------------
 	-- Internal Signal Declarations
 	-------------------------------------------------------
-
-        -- NONE
+	signal q0, q1, q2, q3 : std_logic;
+	-- NONE
 
 begin
 	
 	-------------------------------------------------------
 	-- Component Instantiations
-	-------------------------------------------------------                                        
-        
-        -- NONE
-        
+	-------------------------------------------------------
+    bit1 : dff270_re port map
+    (
+    clken => '1',
+    clk => clk,
+    rst => rst,
+    d => input,
+    q => q0
+    );
+     bit2 : dff270_re port map
+    (
+    clken => '1',
+    clk => clk,
+    rst => rst,
+    d => q0,
+    q => q1
+    ); 
+    bit3 : dff270_re port map
+    (
+    clken => '1',
+    clk => clk,
+    rst => rst,
+    d => q1,
+    q => q2
+    );
+    bit4 : dff270_re port map
+    (
+    clken => '1',
+    clk => clk,
+    rst => rst,
+    d => q2,
+    q => q3
+    );
 	-------------------------------------------------------------
 	-- Begin Design Description of Gates and how to connect them
 	-------------------------------------------------------------
-
-	Cout <= (A AND B) OR (Cin AND (A XOR B) );
-	Sum <= (A XOR B) XOR Cin;
- 			 
-end fulladder_a; -- .same name as the architecture
+    ps0 <= q0;
+    ps1 <= q1;
+    ps2 <= q2;
+    ps3 <= q3;
+end four_bit_register_a; -- .same name as the architecture

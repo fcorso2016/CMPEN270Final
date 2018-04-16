@@ -1,11 +1,10 @@
 ------------ HEADER ------------------------------------------------------------------------------------------------- 
--- Date				: 4/15/18
--- Lab # and name	: Lab 9 - Final Project
--- Student 1		: Francesco Corso
--- Student 2		: Sam Schultz
--- Student 3        : Cody Wiley
+-- Date				: 
+-- Lab # and name	: 
+-- Student 1		: 
+-- Student 2		: 
 
--- Description		: A 1 bit full adder
+-- Description		: 
 
 
 -- Changes 
@@ -24,47 +23,42 @@ use ieee.std_logic_1164.all;
 
 -- Entity 
 
-entity fulladder is port
-    (
-        Cin              : in std_logic;
-        A                     : in std_logic;
-        B                     : in std_logic;
-        Cout                  : out std_logic;
-        Sum                   : out std_logic
-     
-    );
-end fulladder;
+entity template is port
+	( 
+		myin	: in std_logic		; 	-- input description comment			
+		myout  	: out std_logic			-- output description comment	
+	);
+end template;
 ----------------------------------------------------------------------
 
 -- Architecture 
-architecture fulladder_a of fulladder is
+architecture template_a of template is
 ----------------------------------------------------------------------
 
 	--------------------------------------------------------
 	-- Component Declarations 
 	-------------------------------------------------------
 
-        -- NONE
+	-- NONE
 	
 	-------------------------------------------------------
 	-- Internal Signal Declarations
 	-------------------------------------------------------
-
-        -- NONE
+	
+	-- NONE
 
 begin
 	
 	-------------------------------------------------------
 	-- Component Instantiations
-	-------------------------------------------------------                                        
-        
-        -- NONE
-        
+	-------------------------------------------------------
+
+	-- NONE
+	
 	-------------------------------------------------------------
 	-- Begin Design Description of Gates and how to connect them
 	-------------------------------------------------------------
-
-	Cout <= (A AND B) OR (Cin AND (A XOR B) );
-	Sum <= (A XOR B) XOR Cin;
+	
+	myout <= myin;
  			 
-end fulladder_a; -- .same name as the architecture
+end template_a; -- .same name as the architecture

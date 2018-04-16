@@ -71,11 +71,11 @@ begin
 	-------------------------------------------------------
     fadder1: fulladder port map
         ( 
-        cin =>'0',
-        A => count,
-        B => b0,
-        Sum => s_int0,
-        Cout => co0
+            cin =>'0',
+            A => count,
+            B => b0,
+            Sum => s_int0,
+            Cout => co0
         );
     
     fadder2: fulladder port map

@@ -125,6 +125,8 @@ begin
 	       s1 => bit_count(1)
 	   );
 	   
+	-- Make the enabler circuit and wire up the enable to the rest of the circuit
+	   
 	character_getter : codeTranslator port map
 	   (
 	       enable => '1',

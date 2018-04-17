@@ -28,13 +28,7 @@ use ieee.std_logic_1164.all;
 entity SevenSeg is port
 	( 
 		B	            : in std_logic_vector(0 to 4);     -- Binary Digits
-		SegA	        : out std_logic;    -- Segment A
-		SegB	        : out std_logic;    -- Segment B
-		SegC	        : out std_logic;    -- Segment C
-		SegD	        : out std_logic;    -- Segment D
-		SegE	        : out std_logic;    -- Segment E
-		SegF	        : out std_logic;    -- Segment F
-		SegG	        : out std_logic    -- Segment G
+		Segs             : out std_logic_vector(0 to 6)
 		
 	);
 end SevenSeg;
@@ -53,8 +47,13 @@ architecture SevenSeg_a of SevenSeg is
 	-------------------------------------------------------
 	-- Internal Signal Declarations
 	-------------------------------------------------------
-	
-	-- NONE 
+	signal SegA	           : std_logic;    -- Segment A
+    signal SegB            : std_logic;    -- Segment B
+    signal SegC            : std_logic;    -- Segment C
+    signal SegD            : std_logic;    -- Segment D
+    signal SegE            : std_logic;    -- Segment E
+    signal SegF            : std_logic;    -- Segment F
+    signal SegG            : std_logic;    -- Segment G
 
 begin
 	
@@ -91,6 +90,15 @@ begin
         OR (B(4) AND (    (B(1)) OR (NOT B(0) AND NOT B(2) AND NOT B(3)) OR (B(0) AND B(2) AND NOT B(3)) ));
     SegG <= (NOT B(4) AND((NOT B(3) AND NOT B(1)) OR (B(0) AND NOT B(3)) OR (B(2) AND B(0)) OR (B(3) AND NOT B(0) AND B(1)) OR (B(2) AND NOT B(3)))) OR 
         (B(4) AND ((NOT B(2) AND NOT B(3)) OR (B(0)) OR (B(1))));
+        
+    -- Invert Segments
+    Segs(0) <= NOT SegA;
+    Segs(1) <= NOT SegB;
+    Segs(2) <= NOT SegC;
+    Segs(3) <= NOT SegD;
+    Segs(4) <= NOT SegE;
+    Segs(5) <= NOT SegF;
+    Segs(6) <= NOT SegG;
 
  			 
 end SevenSeg_a; -- .same name as the architecture

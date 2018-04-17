@@ -63,10 +63,34 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/CMPEN270Final/InputParser.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/InputParser.vhd"/>
+          <Attr Name="ImportTime" Val="1523376922"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/SevenSeg.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/SevenSeg.vhd"/>
+          <Attr Name="ImportTime" Val="1523922001"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/Downloads/clkdiv.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/clkdiv.vhd"/>
           <Attr Name="ImportTime" Val="1523908688"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/CMPEN270Final/codeTranslator.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/codeTranslator.vhd"/>
+          <Attr Name="ImportTime" Val="1523376922"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -87,10 +111,26 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/four_bit_register.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/four_bit_register.vhd"/>
+          <Attr Name="ImportTime" Val="1523917162"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/sources/fulladder.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../sources/fulladder.vhd"/>
           <Attr Name="ImportTime" Val="1522113459"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources/twobitcounter.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../CMPEN270Files/lab8/lab8/sources/twobitcounter.vhd"/>
+          <Attr Name="ImportTime" Val="1523309012"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -103,71 +143,17 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/CMPEN270Final/InputParser.vhd">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/InputParser.vhd"/>
-          <Attr Name="ImportTime" Val="1523376922"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/sources/toplevel.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../lab9/sources/toplevel.vhd"/>
           <Attr Name="ImportTime" Val="1523381226"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources/MUX.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../lab8/sources/MUX.vhd"/>
-          <Attr Name="ImportTime" Val="1522717876"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/CMPEN270Final/codeTranslator.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/codeTranslator.vhd"/>
-          <Attr Name="ImportTime" Val="1523376922"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/Downloads/MACHOMUX.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/MACHOMUX.vhd"/>
-          <Attr Name="ImportTime" Val="1523917162"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/Downloads/four_bit_register.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/four_bit_register.vhd"/>
-          <Attr Name="ImportTime" Val="1523917162"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/Downloads/SevenSeg.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/SevenSeg.vhd"/>
-          <Attr Name="ImportTime" Val="1523922001"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="input_parser"/>
+        <Option Name="TopModule" Val="toplevel"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
@@ -189,7 +175,7 @@
       <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="input_parser"/>
+        <Option Name="TopModule" Val="toplevel"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>

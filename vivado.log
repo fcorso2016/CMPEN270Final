@@ -18,6 +18,7 @@ INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
 open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:44 . Memory (MB): peak = 731.008 ; gain = 64.973
 update_compile_order -fileset sources_1
+<<<<<<< Updated upstream
 update_compile_order -fileset sources_1
 import_files -norecurse C:/Users/cryst/Documents/School/CMPEN270Final/codeTranslator.vhd
 update_compile_order -fileset sources_1
@@ -29,3 +30,7 @@ import_files -norecurse C:/Users/cryst/Downloads/SevenSeg.vhd
 update_compile_order -fileset sources_1
 exit
 INFO: [Common 17-206] Exiting Vivado at Mon Apr 16 19:40:44 2018...
+=======
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 15 19:35:01 2018...
+>>>>>>> Stashed changes

@@ -43,7 +43,7 @@ architecture input_parser_a of input_parser is
 	-------------------------------------------------------
 	component fourBitCounter is port
 	   ( 
-		  rst, clk, count  : in std_logic;
+		  rst, clk, count, clken  : in std_logic;
 		  s3, s2, s1, s0 : out std_logic
 	   );
     end component;
@@ -91,19 +91,12 @@ begin
 	       clk => clk,
 	       Sclk => slowed_clock
 	   );
-	   
-	parse_count : userinput port map
-	   (
-	       input => slowed_clock,
-	       clk => clk,
-	       rst => '0',
-	       pulse => inverse_count
-	   ); 
 	
 	counter : fourBitCounter port map
 	   ( 
-	       clk => clk,
+	       clk => slowed_clock,
 	       rst => not_button,
+	       clken => '1',
 	       count => button,
 	       s3 => count_output(3),
 	       s2 => count_output(2),
@@ -129,7 +122,6 @@ begin
 	-------------------------------------------------------------
 	-- Begin Design Description of Gates and how to connect them
 	-------------------------------------------------------------
-	count_up <= NOT inverse_count;
 	not_button <= NOT button;
 	store_out <= button_released;
 	output <= long_press AND button_released;

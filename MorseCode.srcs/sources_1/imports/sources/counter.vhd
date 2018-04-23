@@ -24,7 +24,7 @@ use ieee.std_logic_1164.all;
 
 entity fourBitCounter is port
 	( 
-		rst, clk, count  : in std_logic;
+		rst, clk, count, clken  : in std_logic;
 		s3, s2, s1, s0 : out std_logic
 	);
 end fourBitCounter;
@@ -107,7 +107,7 @@ begin
         (
             clk => clk,
             rst => rst,
-            clken => '1',
+            clken => clken,
             d => s_int0,
             q => b0
         );
@@ -116,7 +116,7 @@ begin
         (                                
             clk => clk,                  
             rst => rst,                  
-            clken => '1',                
+            clken => clken,                
             d => s_int1,                 
             q => b1                      
         );                               
@@ -125,7 +125,7 @@ begin
         (                                
             clk => clk,                  
             rst => rst,                  
-            clken => '1',                
+            clken => clken,                
             d => s_int2,                 
             q => b2                      
         );                               
@@ -134,7 +134,7 @@ begin
         (                                
             clk => clk,                  
             rst => rst,                  
-            clken => '1',                        
+            clken => clken,                        
             d => s_int3,                         
             q => b3                              
         ); 

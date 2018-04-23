@@ -2,10 +2,10 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Mon Apr 16 16:33:30 2018
-# Process ID: 13112
+# Start of session at: Mon Apr 23 16:42:46 2018
+# Process ID: 22996
 # Current directory: C:/Users/cryst/Documents/School/CMPEN270Final
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6656 C:\Users\cryst\Documents\School\CMPEN270Final\MorseCode.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22704 C:\Users\cryst\Documents\School\CMPEN270Final\MorseCode.xpr
 # Log file: C:/Users/cryst/Documents/School/CMPEN270Final/vivado.log
 # Journal file: C:/Users/cryst/Documents/School/CMPEN270Final\vivado.jou
 #-----------------------------------------------------------
@@ -16,21 +16,848 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
-open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:44 . Memory (MB): peak = 731.008 ; gain = 64.973
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 803.137 ; gain = 93.844
 update_compile_order -fileset sources_1
-<<<<<<< Updated upstream
-update_compile_order -fileset sources_1
-import_files -norecurse C:/Users/cryst/Documents/School/CMPEN270Final/codeTranslator.vhd
-update_compile_order -fileset sources_1
-import_files -norecurse C:/Users/cryst/Downloads/MACHOMUX.vhd
-update_compile_order -fileset sources_1
-import_files -norecurse C:/Users/cryst/Downloads/four_bit_register.vhd
-update_compile_order -fileset sources_1
-import_files -norecurse C:/Users/cryst/Downloads/SevenSeg.vhd
-update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Apr 23 16:59:28 2018] Launched synth_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/synth_1/runme.log
+[Mon Apr 23 16:59:28 2018] Launched impl_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Apr 23 16:59:58 2018] Launched synth_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/synth_1/runme.log
+[Mon Apr 23 16:59:58 2018] Launched impl_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Apr 23 17:00:46 2018] Launched synth_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/synth_1/runme.log
+[Mon Apr 23 17:00:46 2018] Launched impl_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Apr 23 17:01:08 2018] Launched synth_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/synth_1/runme.log
+[Mon Apr 23 17:01:08 2018] Launched impl_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.1
+  **** Build date : Apr  4 2018-19:32:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183739894A
+set_property PROGRAM.FILE {C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Apr 23 17:06:36 2018] Launched synth_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/synth_1/runme.log
+[Mon Apr 23 17:06:36 2018] Launched impl_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: toplevel
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1679.066 ; gain = 103.695
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'toplevel' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:37]
+INFO: [Synth 8-3491] module 'input_parser' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:27' bound to instance 'input_button' of component 'input_parser' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'input_parser' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:38]
+INFO: [Synth 8-3491] module 'clkdiv' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:24' bound to instance 'clock_divider' of component 'clkdiv' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'clkdiv' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv' (1#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:32]
+INFO: [Synth 8-3491] module 'userinput' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:26' bound to instance 'parse_count' of component 'userinput' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'userinput' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:36]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'latch1' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'dff270_re' (2#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:39]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'latch0' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'userinput' (3#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:36]
+INFO: [Synth 8-3491] module 'fourBitCounter' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:25' bound to instance 'counter' of component 'fourBitCounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'fourBitCounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:34]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'fulladder' (4#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:40]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:81]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder3' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:89]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder4' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:97]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result0' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:106]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result1' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:115]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result2' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:124]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result3' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'fourBitCounter' (5#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:34]
+INFO: [Synth 8-3491] module 'userinput' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:26' bound to instance 'button_release' of component 'userinput' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:114]
+INFO: [Synth 8-3491] module 'comparator' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:27' bound to instance 'length_checker' of component 'comparator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'comparator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:36]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder0' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:65]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:74]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:83]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder3' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:92]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder4' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'comparator' (6#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'input_parser' (7#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:38]
+INFO: [Synth 8-3491] module 'four_bit_register' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:26' bound to instance 'shift_register' of component 'four_bit_register' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'four_bit_register' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:35]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit1' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:61]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit2' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:69]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit3' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:77]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit4' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'four_bit_register' (8#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:35]
+INFO: [Synth 8-3491] module 'twobitcounter' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:27' bound to instance 'length_checker' of component 'twobitcounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'twobitcounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:36]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:74]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:83]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store1' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:93]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store2' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'twobitcounter' (9#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:36]
+INFO: [Synth 8-3491] module 'enabler' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:26' bound to instance 'enable_counter' of component 'enabler' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'enabler' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:35]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store_state' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'enabler' (10#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:35]
+INFO: [Synth 8-3491] module 'codeTranslator' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:27' bound to instance 'character_getter' of component 'codeTranslator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'codeTranslator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'codeTranslator' (11#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:38]
+INFO: [Synth 8-3491] module 'SevenSeg' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:28' bound to instance 'get_segment' of component 'SevenSeg' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'SevenSeg' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'SevenSeg' (12#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'toplevel' (13#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:37]
+WARNING: [Synth 8-3917] design toplevel has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port an[3] driven by constant 1
+WARNING: [Synth 8-3331] design four_bit_register has unconnected port clken
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1720.918 ; gain = 145.547
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1720.918 ; gain = 145.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1720.918 ; gain = 145.547
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 3 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'enabled'. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'enabled'. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:30 . Memory (MB): peak = 2057.223 ; gain = 481.852
+66 Infos, 6 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:30 . Memory (MB): peak = 2057.223 ; gain = 481.852
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Apr 23 17:18:44 2018] Launched synth_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/synth_1/runme.log
+[Mon Apr 23 17:18:44 2018] Launched impl_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 2667.590 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 2667.590 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 2719.266 ; gain = 642.008
+current_design rtl_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2758.918 ; gain = 13.875
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'toplevel' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:37]
+INFO: [Synth 8-3491] module 'input_parser' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:27' bound to instance 'input_button' of component 'input_parser' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'input_parser' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:38]
+INFO: [Synth 8-3491] module 'clkdiv' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:24' bound to instance 'clock_divider' of component 'clkdiv' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'clkdiv' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv' (1#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:32]
+INFO: [Synth 8-3491] module 'userinput' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:26' bound to instance 'parse_count' of component 'userinput' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'userinput' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:36]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'latch1' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'dff270_re' (2#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:39]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'latch0' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'userinput' (3#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:36]
+INFO: [Synth 8-3491] module 'fourBitCounter' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:25' bound to instance 'counter' of component 'fourBitCounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'fourBitCounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:34]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'fulladder' (4#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:40]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:81]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder3' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:89]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder4' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:97]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result0' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:106]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result1' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:115]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result2' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:124]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result3' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'fourBitCounter' (5#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:34]
+INFO: [Synth 8-3491] module 'userinput' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:26' bound to instance 'button_release' of component 'userinput' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:115]
+INFO: [Synth 8-3491] module 'comparator' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:27' bound to instance 'length_checker' of component 'comparator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'comparator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:36]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder0' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:65]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:74]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:83]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder3' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:92]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder4' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'comparator' (6#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'input_parser' (7#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:38]
+INFO: [Synth 8-3491] module 'four_bit_register' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:26' bound to instance 'shift_register' of component 'four_bit_register' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'four_bit_register' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:35]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit1' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:61]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit2' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:69]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit3' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:77]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit4' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'four_bit_register' (8#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:35]
+INFO: [Synth 8-3491] module 'twobitcounter' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:27' bound to instance 'length_checker' of component 'twobitcounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'twobitcounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:36]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:74]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:83]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store1' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:93]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store2' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'twobitcounter' (9#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:36]
+INFO: [Synth 8-3491] module 'enabler' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:26' bound to instance 'enable_counter' of component 'enabler' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'enabler' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:35]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store_state' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'enabler' (10#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:35]
+INFO: [Synth 8-3491] module 'codeTranslator' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:27' bound to instance 'character_getter' of component 'codeTranslator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'codeTranslator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'codeTranslator' (11#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:38]
+INFO: [Synth 8-3491] module 'SevenSeg' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:28' bound to instance 'get_segment' of component 'SevenSeg' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'SevenSeg' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'SevenSeg' (12#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'toplevel' (13#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:37]
+WARNING: [Synth 8-3917] design toplevel has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port an[3] driven by constant 1
+WARNING: [Synth 8-3331] design four_bit_register has unconnected port clken
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2796.668 ; gain = 51.625
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2796.668 ; gain = 51.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2796.668 ; gain = 51.625
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 3 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'enabled'. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'enabled'. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 2892.699 ; gain = 147.656
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Apr 23 17:25:42 2018] Launched synth_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/synth_1/runme.log
+[Mon Apr 23 17:25:42 2018] Launched impl_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Apr 23 17:29:28 2018] Launched synth_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/synth_1/runme.log
+[Mon Apr 23 17:29:28 2018] Launched impl_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2892.699 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'toplevel' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:37]
+INFO: [Synth 8-3491] module 'input_parser' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:27' bound to instance 'input_button' of component 'input_parser' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'input_parser' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:38]
+INFO: [Synth 8-3491] module 'clkdiv' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:24' bound to instance 'clock_divider' of component 'clkdiv' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'clkdiv' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv' (1#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:32]
+INFO: [Synth 8-3491] module 'fourBitCounter' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:25' bound to instance 'counter' of component 'fourBitCounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'fourBitCounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:34]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'fulladder' (2#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:40]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:81]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder3' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:89]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder4' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:97]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result0' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'dff270_re' (3#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:39]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result1' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:115]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result2' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:124]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result3' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'fourBitCounter' (4#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:34]
+INFO: [Synth 8-3491] module 'userinput' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:26' bound to instance 'button_release' of component 'userinput' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'userinput' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:36]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'latch1' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:65]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'latch0' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'userinput' (5#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:36]
+INFO: [Synth 8-3491] module 'comparator' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:27' bound to instance 'length_checker' of component 'comparator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'comparator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:36]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder0' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:65]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:74]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:83]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder3' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:92]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder4' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'comparator' (6#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'input_parser' (7#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:38]
+INFO: [Synth 8-3491] module 'four_bit_register' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:26' bound to instance 'shift_register' of component 'four_bit_register' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'four_bit_register' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:35]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit1' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:61]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit2' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:69]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit3' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:77]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit4' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'four_bit_register' (8#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:35]
+INFO: [Synth 8-3491] module 'twobitcounter' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:27' bound to instance 'length_checker' of component 'twobitcounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'twobitcounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:36]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:74]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:83]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store1' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:93]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store2' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'twobitcounter' (9#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:36]
+INFO: [Synth 8-3491] module 'enabler' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:26' bound to instance 'enable_counter' of component 'enabler' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'enabler' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:35]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store_state' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'enabler' (10#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:35]
+INFO: [Synth 8-3491] module 'codeTranslator' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:27' bound to instance 'character_getter' of component 'codeTranslator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'codeTranslator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'codeTranslator' (11#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:38]
+INFO: [Synth 8-3491] module 'SevenSeg' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:28' bound to instance 'get_segment' of component 'SevenSeg' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'SevenSeg' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'SevenSeg' (12#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'toplevel' (13#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:37]
+WARNING: [Synth 8-3917] design toplevel has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port an[3] driven by constant 1
+WARNING: [Synth 8-3331] design four_bit_register has unconnected port clken
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2892.699 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2892.699 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2892.699 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 3 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'enabled'. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'enabled'. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 2936.199 ; gain = 43.500
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Apr 23 17:40:47 2018] Launched synth_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/synth_1/runme.log
+[Mon Apr 23 17:40:47 2018] Launched impl_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3013.230 ; gain = 23.793
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'toplevel' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:37]
+INFO: [Synth 8-3491] module 'input_parser' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:27' bound to instance 'input_button' of component 'input_parser' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'input_parser' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:38]
+INFO: [Synth 8-3491] module 'clkdiv' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:24' bound to instance 'clock_divider' of component 'clkdiv' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'clkdiv' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv' (1#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:32]
+INFO: [Synth 8-3491] module 'fourBitCounter' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:25' bound to instance 'counter' of component 'fourBitCounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'fourBitCounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:34]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'fulladder' (2#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:40]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:81]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder3' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:89]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder4' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:97]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result0' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'dff270_re' (3#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:39]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result1' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:115]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result2' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:124]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result3' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'fourBitCounter' (4#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:34]
+INFO: [Synth 8-3491] module 'userinput' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:26' bound to instance 'button_release' of component 'userinput' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'userinput' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:36]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'latch1' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:65]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'latch0' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'userinput' (5#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:36]
+INFO: [Synth 8-3491] module 'comparator' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:27' bound to instance 'length_checker' of component 'comparator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'comparator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:36]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder0' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:65]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:74]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:83]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder3' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:92]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder4' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'comparator' (6#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'input_parser' (7#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:38]
+INFO: [Synth 8-3491] module 'four_bit_register' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:26' bound to instance 'shift_register' of component 'four_bit_register' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'four_bit_register' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:35]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit1' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:60]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit2' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:68]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit3' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:76]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit4' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'four_bit_register' (8#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:35]
+INFO: [Synth 8-3491] module 'twobitcounter' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:27' bound to instance 'length_checker' of component 'twobitcounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'twobitcounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:36]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:74]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:83]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store1' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:93]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store2' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'twobitcounter' (9#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:36]
+INFO: [Synth 8-3491] module 'enabler' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:26' bound to instance 'enable_counter' of component 'enabler' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'enabler' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:35]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store_state' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'enabler' (10#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:35]
+INFO: [Synth 8-3491] module 'codeTranslator' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:27' bound to instance 'character_getter' of component 'codeTranslator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'codeTranslator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'codeTranslator' (11#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:38]
+INFO: [Synth 8-3491] module 'SevenSeg' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:28' bound to instance 'get_segment' of component 'SevenSeg' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'SevenSeg' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'SevenSeg' (12#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'toplevel' (13#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:37]
+WARNING: [Synth 8-3917] design toplevel has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port an[3] driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 3037.199 ; gain = 47.762
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 3037.199 ; gain = 47.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 3037.199 ; gain = 47.762
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 3 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'enabled'. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'enabled'. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 3133.109 ; gain = 143.672
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Apr 23 18:01:09 2018] Launched synth_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/synth_1/runme.log
+[Mon Apr 23 18:01:09 2018] Launched impl_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3133.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'toplevel' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:40]
+INFO: [Synth 8-3491] module 'input_parser' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:27' bound to instance 'input_button' of component 'input_parser' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'input_parser' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:38]
+INFO: [Synth 8-3491] module 'clkdiv' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:24' bound to instance 'clock_divider' of component 'clkdiv' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'clkdiv' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv' (1#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:32]
+INFO: [Synth 8-3491] module 'fourBitCounter' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:25' bound to instance 'counter' of component 'fourBitCounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'fourBitCounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:34]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'fulladder' (2#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:40]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:81]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder3' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:89]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder4' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:97]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result0' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'dff270_re' (3#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:39]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result1' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:115]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result2' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:124]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result3' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'fourBitCounter' (4#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:34]
+INFO: [Synth 8-3491] module 'userinput' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:26' bound to instance 'button_release' of component 'userinput' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'userinput' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:36]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'latch1' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:65]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'latch0' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'userinput' (5#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:36]
+INFO: [Synth 8-3491] module 'comparator' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:27' bound to instance 'length_checker' of component 'comparator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'comparator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:36]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder0' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:65]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:74]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:83]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder3' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:92]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder4' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'comparator' (6#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'input_parser' (7#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:38]
+INFO: [Synth 8-3491] module 'four_bit_register' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:26' bound to instance 'shift_register' of component 'four_bit_register' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'four_bit_register' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:35]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit1' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:60]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit2' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:68]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit3' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:76]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit4' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'four_bit_register' (8#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:35]
+INFO: [Synth 8-3491] module 'twobitcounter' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:27' bound to instance 'length_checker' of component 'twobitcounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'twobitcounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:36]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:74]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:83]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store1' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:93]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store2' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'twobitcounter' (9#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:36]
+INFO: [Synth 8-3491] module 'enabler' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:26' bound to instance 'enable_counter' of component 'enabler' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'enabler' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:35]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store_state' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'enabler' (10#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:35]
+INFO: [Synth 8-3491] module 'codeTranslator' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:27' bound to instance 'character_getter' of component 'codeTranslator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'codeTranslator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'codeTranslator' (11#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:38]
+INFO: [Synth 8-3491] module 'SevenSeg' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:28' bound to instance 'get_segment' of component 'SevenSeg' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'SevenSeg' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'SevenSeg' (12#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'toplevel' (13#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:40]
+WARNING: [Synth 8-3917] design toplevel has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port an[3] driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3133.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3133.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3133.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 7 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'count[0]'. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'count[0]'. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'count[1]'. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'count[1]'. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 3140.227 ; gain = 7.117
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Apr 23 18:07:30 2018] Launched synth_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/synth_1/runme.log
+[Mon Apr 23 18:07:30 2018] Launched impl_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3140.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'toplevel' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:40]
+INFO: [Synth 8-3491] module 'input_parser' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:27' bound to instance 'input_button' of component 'input_parser' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'input_parser' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:38]
+INFO: [Synth 8-3491] module 'clkdiv' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:24' bound to instance 'clock_divider' of component 'clkdiv' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'clkdiv' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv' (1#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:32]
+INFO: [Synth 8-3491] module 'fourBitCounter' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:25' bound to instance 'counter' of component 'fourBitCounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'fourBitCounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:34]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'fulladder' (2#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:40]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:81]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder3' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:89]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder4' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:97]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result0' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'dff270_re' (3#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:39]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result1' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:115]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result2' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:124]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result3' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'fourBitCounter' (4#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:34]
+INFO: [Synth 8-3491] module 'userinput' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:26' bound to instance 'button_release' of component 'userinput' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'userinput' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:36]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'latch1' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:65]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'latch0' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'userinput' (5#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:36]
+INFO: [Synth 8-3491] module 'comparator' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:27' bound to instance 'length_checker' of component 'comparator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'comparator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:36]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder0' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:65]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:74]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:83]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder3' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:92]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder4' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'comparator' (6#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'input_parser' (7#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:38]
+INFO: [Synth 8-3491] module 'four_bit_register' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:26' bound to instance 'shift_register' of component 'four_bit_register' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'four_bit_register' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:35]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit1' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:60]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit2' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:68]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit3' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:76]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit4' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'four_bit_register' (8#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:35]
+INFO: [Synth 8-3491] module 'twobitcounter' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:27' bound to instance 'length_checker' of component 'twobitcounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'twobitcounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:36]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:74]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:83]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store1' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:93]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store2' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'twobitcounter' (9#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:36]
+INFO: [Synth 8-3491] module 'enabler' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:26' bound to instance 'enable_counter' of component 'enabler' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'enabler' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:35]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store_state' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'enabler' (10#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:35]
+INFO: [Synth 8-3491] module 'codeTranslator' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:27' bound to instance 'character_getter' of component 'codeTranslator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'codeTranslator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'codeTranslator' (11#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:38]
+INFO: [Synth 8-3491] module 'SevenSeg' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:28' bound to instance 'get_segment' of component 'SevenSeg' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'SevenSeg' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'SevenSeg' (12#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'toplevel' (13#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:40]
+WARNING: [Synth 8-3917] design toplevel has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port an[3] driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3140.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3140.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3140.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 7 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'count[1]'. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'count[1]'. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 3147.113 ; gain = 6.887
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Apr 23 18:10:44 2018] Launched synth_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/synth_1/runme.log
+[Mon Apr 23 18:10:44 2018] Launched impl_1...
+Run output will be captured here: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183739894A
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 16 19:40:44 2018...
-=======
-exit
-INFO: [Common 17-206] Exiting Vivado at Sun Apr 15 19:35:01 2018...
->>>>>>> Stashed changes
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 23 18:22:59 2018...

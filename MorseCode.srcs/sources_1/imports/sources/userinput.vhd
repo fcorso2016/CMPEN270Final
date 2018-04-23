@@ -83,7 +83,7 @@ begin
 	-------------------------------------------------------------
 	-- Begin Design Description of Gates and how to connect them
 	-------------------------------------------------------------
-	NS1 <= PS1 AND (NOT input);
+	NS1 <= PS0 AND (NOT input);
 	NS0 <= input;
 	pulse <= PS1;
 	

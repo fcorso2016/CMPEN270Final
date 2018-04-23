@@ -51,7 +51,6 @@ architecture four_bit_register_a of four_bit_register is
 	-- Internal Signal Declarations
 	-------------------------------------------------------
 	signal q0, q1, q2, q3 : std_logic;
-	-- NONE
 
 begin
 	
@@ -60,7 +59,7 @@ begin
 	-------------------------------------------------------
     bit1 : dff270_re port map
     (
-    clken => '1',
+    clken => clken,
     clk => clk,
     rst => rst,
     d => input,
@@ -68,7 +67,7 @@ begin
     );
      bit2 : dff270_re port map
     (
-    clken => '1',
+    clken => clken,
     clk => clk,
     rst => rst,
     d => q0,
@@ -76,7 +75,7 @@ begin
     ); 
     bit3 : dff270_re port map
     (
-    clken => '1',
+    clken => clken,
     clk => clk,
     rst => rst,
     d => q1,
@@ -84,7 +83,7 @@ begin
     );
     bit4 : dff270_re port map
     (
-    clken => '1',
+    clken => clken,
     clk => clk,
     rst => rst,
     d => q2,

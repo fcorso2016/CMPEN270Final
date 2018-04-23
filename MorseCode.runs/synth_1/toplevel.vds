@@ -1,0 +1,355 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Apr 23 18:10:46 2018
+# Process ID: 32076
+# Current directory: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/synth_1
+# Command line: vivado.exe -log toplevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source toplevel.tcl
+# Log file: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/synth_1/toplevel.vds
+# Journal file: C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source toplevel.tcl -notrace
+Command: synth_design -top toplevel -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 31960 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 359.449 ; gain = 100.043
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'toplevel' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:40]
+INFO: [Synth 8-3491] module 'input_parser' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:27' bound to instance 'input_button' of component 'input_parser' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'input_parser' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:38]
+INFO: [Synth 8-3491] module 'clkdiv' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:24' bound to instance 'clock_divider' of component 'clkdiv' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'clkdiv' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv' (1#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:32]
+INFO: [Synth 8-3491] module 'fourBitCounter' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:25' bound to instance 'counter' of component 'fourBitCounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'fourBitCounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:34]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'fulladder' (2#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:40]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:81]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder3' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:89]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder4' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:97]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result0' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'dff270_re' (3#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:39]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result1' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:115]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result2' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:124]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result3' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'fourBitCounter' (4#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:34]
+INFO: [Synth 8-3491] module 'userinput' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:26' bound to instance 'button_release' of component 'userinput' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'userinput' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:36]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'latch1' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:65]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'latch0' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'userinput' (5#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:36]
+INFO: [Synth 8-3491] module 'comparator' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:27' bound to instance 'length_checker' of component 'comparator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'comparator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:36]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder0' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:65]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:74]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:83]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder3' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:92]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder4' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'comparator' (6#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'input_parser' (7#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:38]
+INFO: [Synth 8-3491] module 'four_bit_register' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:26' bound to instance 'shift_register' of component 'four_bit_register' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'four_bit_register' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:35]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit1' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:60]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit2' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:68]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit3' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:76]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit4' of component 'dff270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'four_bit_register' (8#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:35]
+INFO: [Synth 8-3491] module 'twobitcounter' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:27' bound to instance 'length_checker' of component 'twobitcounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'twobitcounter' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:36]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder1' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:74]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder2' of component 'fulladder' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:83]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store1' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:93]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store2' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'twobitcounter' (9#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:36]
+INFO: [Synth 8-3491] module 'enabler' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:26' bound to instance 'enable_counter' of component 'enabler' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'enabler' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:35]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store_state' of component 'DFF270_re' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'enabler' (10#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:35]
+INFO: [Synth 8-3491] module 'codeTranslator' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:27' bound to instance 'character_getter' of component 'codeTranslator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'codeTranslator' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'codeTranslator' (11#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:38]
+INFO: [Synth 8-3491] module 'SevenSeg' declared at 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:28' bound to instance 'get_segment' of component 'SevenSeg' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'SevenSeg' [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'SevenSeg' (12#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'toplevel' (13#1) [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:40]
+WARNING: [Synth 8-3917] design toplevel has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port an[3] driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 414.891 ; gain = 155.484
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 414.891 ; gain = 155.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 414.891 ; gain = 155.484
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/toplevel_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/toplevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 746.668 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 746.668 ; gain = 487.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 746.668 ; gain = 487.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 746.668 ; gain = 487.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 746.668 ; gain = 487.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 23    
++---Registers : 
+	                1 Bit    Registers := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clkdiv 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module fulladder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module dff270_re 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module comparator 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element shift_register/bit1/q_reg was removed.  [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element shift_register/bit2/q_reg was removed.  [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element shift_register/bit3/q_reg was removed.  [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element shift_register/bit4/q_reg was removed.  [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:71]
+WARNING: [Synth 8-3917] design toplevel has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port an[3] driven by constant 1
+WARNING: [Synth 8-3332] Sequential element (input_button/clock_divider/s_reg) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (input_button/counter/result0/q_reg) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (input_button/counter/result1/q_reg) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (input_button/counter/result2/q_reg) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (input_button/counter/result3/q_reg) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (input_button/button_release/latch1/q_reg) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (input_button/button_release/latch0/q_reg) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (length_checker/store1/q_reg) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (length_checker/store2/q_reg) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (enable_counter/store_state/q_reg) is unused and will be removed from module toplevel.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 746.668 ; gain = 487.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 746.668 ; gain = 487.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 746.668 ; gain = 487.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 746.746 ; gain = 487.340
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 747.871 ; gain = 488.465
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 747.871 ; gain = 488.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 747.871 ; gain = 488.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 747.871 ; gain = 488.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 747.871 ; gain = 488.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 747.871 ; gain = 488.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT6 |    12|
+|3     |IBUF |     7|
+|4     |OBUF |    15|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    35|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 747.871 ; gain = 488.465
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 747.871 ; gain = 156.688
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 747.871 ; gain = 488.465
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+72 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 761.395 ; gain = 515.133
+INFO: [Common 17-1381] The checkpoint 'C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/synth_1/toplevel.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file toplevel_utilization_synth.rpt -pb toplevel_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 761.395 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 23 18:11:36 2018...

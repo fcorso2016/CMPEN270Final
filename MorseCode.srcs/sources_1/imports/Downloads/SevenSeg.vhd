@@ -77,19 +77,19 @@ begin
     
     -- New Segments
 	SegA <= (NOT B(4) AND ((NOT B(3) AND NOT B(0)) OR (NOT B(2) AND B(1) AND NOT B(0)) OR (B(2) AND NOT B(1) AND NOT B(0)) OR (NOT B(3) AND B(2) AND NOT B(1)) OR (B(3) AND B(2) AND B(1) AND B(0)))) 
-	   OR (B(4) AND (B(3) OR (NOT B(2) AND NOT B(0))));
-	SegB <= (NOT B(4) AND ((NOT B(2) AND NOT B(1) AND NOT B(0)) OR (B(3) AND NOT B(2) AND NOT B(1)) OR (B(3) AND B(2) AND B(1) AND B(0)) OR (NOT B(3) AND B(2) AND B(1) AND NOT B(0)) OR (NOT B(3) AND B(2) AND B(1) AND B(0)))) 
-	   OR (B(4) AND (B(3) OR (NOT B(2) AND NOT B(0)) OR (B(2) AND B(0)) OR (B(2) AND B(1))));
-	SegC <= (NOT B(4) AND ((B(3) AND NOT B(1)) OR (B(3) AND NOT B(1)) OR (NOT B(2) AND NOT B(1)) OR (NOT B(3) AND B(1) AND B(0)) OR (B(2) AND B(1) AND NOT B(0)))) 
-	   OR (B(4) AND ((B(1) AND NOT B(0)) OR (B(2) AND B(1)) OR (NOT B(3) AND NOT B(0))));
+	   OR (B(4) AND ((NOT B(2) AND NOT B(3) AND NOT B(0)) OR (B(0) AND B(3))));
+	SegB <= (NOT B(4) AND ((NOT B(2) AND NOT B(1) AND NOT B(0)) OR (B(3) AND NOT B(2) AND NOT B(1)) OR (B(3) AND B(2) AND B(1) AND B(0)) OR (NOT B(3) AND B(2) AND B(1) AND NOT B(0)) OR (NOT B(3) AND NOT B(2) AND B(1) AND B(0)))) 
+	   OR (B(4) AND (B(3) OR (B(2) AND B(1)) OR (B(0) AND B(2)) OR (NOT B(0) AND NOT B(1) AND NOT B(2))));
+	SegC <= (NOT B(4) AND ((B(3) AND NOT B(1)) OR (B(3) AND NOT B(0)) OR (NOT B(2) AND NOT B(1)) OR (NOT B(3) AND B(1) AND B(0)) OR (B(2) AND B(1) AND NOT B(0)))) 
+	   OR (B(4) AND ((NOT B(0) AND NOT B(1)) OR (B(0) AND B(1) AND B(2)) OR (NOT B(0) AND NOT B(2) AND NOT B(3))));
     SegD <= (NOT B(4) AND((B(0) AND NOT B(2)) OR (B(1) AND NOT B(2) AND NOT B(3)) OR (B(2) AND B(1) AND NOT B(0)) OR (B(2) AND NOT B(0) AND NOT B(3)))) OR 
-        (B(4) AND((B(1) AND NOT B(2)) OR (B(3)) OR (B(2) AND NOT B(1)) OR (B(1) AND B(0))));
+        (B(4) AND(B(3) OR (NOT B(1) AND B(2)) OR (B(1) AND NOT B(0)) OR (B(1) AND NOT B(2))));
     SegE <= ( (NOT B(4))   AND  (  (NOT B(1) AND NOT B(3)) OR (NOT B(2) AND NOT B(3)) OR (B(2) AND B(3)) OR  ( (B(1) AND B(3)) OR (B(0) AND B(1)) OR (B(0) AND NOT B(1))  )   ) )     OR
-        ((  B(4)  ) AND (  (B(3)) OR (NOT B(0) AND B(1) AND B(2) ) OR (B(0) AND NOT B(2) AND NOT B(3)) OR ((NOT B(0) AND NOT B(1) AND B(2))  ) ) ) ;
+        ((  B(4)  ) AND (( (B(0) AND B(1)) OR (B(3) AND B(0)) OR (NOT B(0) AND B(2) AND NOT B(1)) OR (NOT B(2) AND B(0))) ) );
     SegF <= (  (NOT B(4)) AND ((NOT B(1) AND NOT B(3)) OR (B(2) AND NOT B(3)) OR (B(0) AND B(1) AND B(3)) OR (NOT B(0) AND B(1) AND NOT B(2)) ) ) 
-        OR (B(4) AND (    (B(1)) OR (NOT B(0) AND NOT B(2) AND NOT B(3)) OR (B(0) AND B(2) AND NOT B(3)) ));
+        OR (B(4) AND ( B(1) OR (B(0) AND NOT B(1) AND B(2)) OR (NOT B(0) AND NOT B(2) AND NOT B(1)) ));
     SegG <= (NOT B(4) AND((NOT B(3) AND NOT B(1)) OR (B(0) AND NOT B(3)) OR (B(2) AND B(0)) OR (B(3) AND NOT B(0) AND B(1)) OR (B(2) AND NOT B(3)))) OR 
-        (B(4) AND ((NOT B(2) AND NOT B(3)) OR (B(0)) OR (B(1))));
+        (B(4) AND (B(1) OR B(3) OR (NOT B(2) AND NOT B(3))));
         
     -- Invert Segments
     Segs(0) <= NOT SegA;

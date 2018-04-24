@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date                      : Mon Apr 23 18:12:23 2018
+| Date                      : Tue Apr 24 13:39:56 2018
 | Host                      : DESKTOP-2J305LI running 64-bit major release  (build 9200)
 | Command                   : report_io -file toplevel_io_placed.rpt
 | Design                    : toplevel

@@ -1,0 +1,90 @@
+/*
+
+Xilinx Vivado v2018.1 (64-bit) [Major: 2018, Minor: 1]
+SW Build: 2188600 on Wed Apr  4 18:40:38 MDT 2018
+IP Build: 2185939 on Wed Apr  4 20:55:05 MDT 2018
+
+Process ID: 4100
+License: Customer
+
+Current time: 	Tue Apr 24 12:14:45 EDT 2018
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 1,541 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.1/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.1/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	cryst
+User home directory: C:/Users/cryst
+User working directory: C:/Users/cryst/Documents/School/CMPEN270Final
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.1
+RDI_DATADIR: C:/Xilinx/Vivado/2018.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.1/bin
+
+Vivado preferences file location: C:/Users/cryst/AppData/Roaming/Xilinx/Vivado/2018.1/vivado.xml
+Vivado preferences directory: C:/Users/cryst/AppData/Roaming/Xilinx/Vivado/2018.1/
+Vivado layouts directory: C:/Users/cryst/AppData/Roaming/Xilinx/Vivado/2018.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/cryst/Documents/School/CMPEN270Final/vivado.log
+Vivado journal file location: 	C:/Users/cryst/Documents/School/CMPEN270Final/vivado.jou
+Engine tmp dir: 	C:/Users/cryst/Documents/School/CMPEN270Final/.Xil/Vivado-4100-DESKTOP-2J305LI
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 499 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 52 MB (+52423kb) [00:00:33]
+// [Engine Memory]: 498 MB (+371075kb) [00:00:33]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bv (ch):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\cryst\Documents\School\CMPEN270Final\MorseCode.xpr. Version: Vivado v2018.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 505 MB. GUI used memory: 34 MB. Current time: 4/24/18 12:14:47 PM EDT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 530 MB. GUI used memory: 34 MB. Current time: 4/24/18 12:15:02 PM EDT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 57 MB (+1598kb) [00:00:59]
+// [Engine Memory]: 555 MB (+33594kb) [00:00:59]
+// [GUI Memory]: 60 MB (+260kb) [00:01:05]
+// Project name: MorseCode; location: C:/Users/cryst/Documents/School/CMPEN270Final; part: xc7a35tcpg236-1
+// [Engine Memory]: 599 MB (+16394kb) [00:01:09]
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 747.668 ; gain = 70.891 
+dismissDialog("Open Project"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+closeMainWindow("MorseCode - [C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.xpr] - Vivado 2018.1"); // ch
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit Vivado. If you choose to abort background task and exit immediately, you will lose all unsaved changes to project. (Background Task)'

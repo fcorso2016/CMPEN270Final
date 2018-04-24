@@ -16,8 +16,9 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache C:/Users/cryst/Documents/School/CMPEN270Final/.Xil/Vivado-22996-DESKTOP-2J305LI/incrSyn
+set_param synth.incrementalSynthesisCache C:/Users/cryst/Documents/School/CMPEN270Final/.Xil/Vivado-26428-DESKTOP-2J305LI/incrSyn
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tcpg236-1
@@ -39,6 +40,7 @@ read_vhdl -library xil_defaultlib {
   C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd
   C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd
   C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd
+  C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/decrementer.vhd
   C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd
   C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd
   C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd

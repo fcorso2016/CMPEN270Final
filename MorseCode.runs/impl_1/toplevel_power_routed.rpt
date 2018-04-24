@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date             : Mon Apr 23 18:12:50 2018
+| Date             : Tue Apr 24 13:40:23 2018
 | Host             : DESKTOP-2J305LI running 64-bit major release  (build 9200)
 | Command          : report_power -file toplevel_power_routed.rpt -pb toplevel_power_summary_routed.pb -rpx toplevel_power_routed.rpx
 | Design           : toplevel
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.083        |
+| Total On-Chip Power (W)  | 0.082        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.011        |
@@ -57,9 +57,9 @@ Table of Contents
 |   LUT as Logic |    <0.001 |       13 |     20800 |            0.06 |
 |   Others       |     0.000 |        1 |       --- |             --- |
 | Signals        |    <0.001 |       20 |       --- |             --- |
-| I/O            |     0.011 |       22 |       106 |           20.75 |
+| I/O            |     0.010 |       22 |       106 |           20.75 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.083 |          |           |                 |
+| Total          |     0.082 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 

@@ -68,17 +68,16 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param synth.incrementalSynthesisCache C:/Users/cryst/Documents/School/CMPEN270Final/.Xil/Vivado-26428-DESKTOP-2J305LI/incrSyn
-  set_param xicom.use_bs_reader 1
+  set_param synth.incrementalSynthesisCache {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/.Xil/Vivado-1564-DESKTOP-PHEMTHR/incrSyn}
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.cache/wt [current_project]
-  set_property parent.project_path C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.xpr [current_project]
-  set_property ip_output_repo C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.cache/ip [current_project]
+  set_property webtalk.parent_dir {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.cache/wt} [current_project]
+  set_property parent.project_path {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.xpr} [current_project]
+  set_property ip_output_repo {{D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.runs/synth_1/toplevel.dcp
-  read_xdc C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc
+  add_files -quiet {{D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.runs/synth_1/toplevel.dcp}}
+  read_xdc {{D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc}}
   link_design -top toplevel -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

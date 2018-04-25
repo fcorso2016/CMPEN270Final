@@ -16,8 +16,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache C:/Users/cryst/Documents/School/CMPEN270Final/.Xil/Vivado-26428-DESKTOP-2J305LI/incrSyn
-set_param xicom.use_bs_reader 1
+set_param synth.incrementalSynthesisCache {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/.Xil/Vivado-1564-DESKTOP-PHEMTHR/incrSyn}
 set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
@@ -26,27 +25,31 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.cache/wt [current_project]
-set_property parent.project_path C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.xpr [current_project]
+set_property webtalk.parent_dir {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.cache/wt} [current_project]
+set_property parent.project_path {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.cache/ip [current_project]
+set_property ip_output_repo {d:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd
-  C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd
-  C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd
-  C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd
-  C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd
-  C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd
-  C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd
-  C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/decrementer.vhd
-  C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd
-  C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd
-  C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd
-  C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd
-  C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd
-  C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd
+  {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd}
+  {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd}
+  {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/MACHOMUX.vhd}
+  {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/MUX.vhd}
+  {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd}
+  {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/biggermux.vhd}
+  {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/bigmux.vhd}
+  {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd}
+  {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd}
+  {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd}
+  {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd}
+  {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd}
+  {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd}
+  {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd}
+  {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/minimux.vhd}
+  {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd}
+  {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd}
+  {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -56,8 +59,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc]
+read_xdc {{D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc}}
+set_property used_in_implementation false [get_files {{D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]

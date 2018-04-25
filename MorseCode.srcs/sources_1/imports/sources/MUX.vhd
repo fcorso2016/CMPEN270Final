@@ -26,8 +26,8 @@ use ieee.std_logic_1164.all;
 
 entity MUX is port
 	( 
-		s1, s0      	: in std_logic;
-		d0, d1, d2, d3  : in std_logic;
+		s      	: in std_logic_vector(0 to 1);
+		d       : in std_logic_vector(0 to 3);
 		myout  	        : out std_logic
 	);
 end MUX;
@@ -36,6 +36,7 @@ end MUX;
 -- Architecture 
 architecture MUX_a of MUX is
 ----------------------------------------------------------------------
+
 	-------------------------------------------------------
 	-- Internal Signal Declarations
 	-------------------------------------------------------
@@ -44,6 +45,6 @@ architecture MUX_a of MUX is
 
 begin
 
-	myout <= (not s1 and not s0 and d0) or (not s1 and s0 and d1) or (s1 and not s0 and d2) or (s1 and s0 and d3);
+	myout <= (not s(1) and not s(0) and d(0)) or (not s(1) and s(0) and d(1)) or (s(1) and not s(0) and d(2)) or (s(1) and s(0) and d(3));
  			 
 end MUX_a; 

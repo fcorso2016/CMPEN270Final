@@ -75,15 +75,6 @@ architecture toplevel_a of toplevel is
         );
     end component;
     
-    component adder_subtracter is port
-        ( 
-            A, B     : in std_logic_vector(0 to 5);     -- input description comment
-            add_sub  : in std_logic;            
-            sum       : out std_logic_vector(0 to 5);
-            overflow : out std_logic
-        );
-    end component;
-    
     component SevenSeg is port
         ( 
             B                : in std_logic_vector(0 to 4);     -- Binary Digits
@@ -109,8 +100,7 @@ architecture toplevel_a of toplevel is
 	signal bit_count : std_logic_vector(0 to 1);
 	signal counter_enabled : std_logic;
 	signal should_count_input : std_logic;
-	signal char_code, char : std_logic_vector(0 to 4);
-	signal throwaway : std_logic;
+	signal char : std_logic_vector(0 to 4);
 
 begin
 	
@@ -160,30 +150,7 @@ begin
 	       enable => counter_enabled,
 	       bitCount => bit_count,
 	       char => stored_bits,
-	       number => char_code
-	   );
-	   
-	decrementer : adder_subtracter port map
-	   (
-	       A(0) => char_code(0),
-	       A(1) => char_code(1),
-	       A(2) => char_code(2),
-	       A(3) => char_code(3),
-	       A(4) => char_code(4),
-	       A(5) => '0',
-	       B(0) => '1',
-	       B(1) => '0',
-           B(2) => '0',
-           B(3) => '0',
-           B(4) => '0',
-           B(5) => '0',
-           add_sub => '1',
-           sum(0) => char(0),
-           sum(1) => char(1),
-           sum(2) => char(2),
-           sum(3) => char(3),
-           sum(4) => char(4),
-           sum(5) => throwaway
+	       number => char
 	   );
 	   
 	get_segment : SevenSeg port map

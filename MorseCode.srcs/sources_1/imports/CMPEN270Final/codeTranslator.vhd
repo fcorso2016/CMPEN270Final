@@ -25,8 +25,7 @@ use ieee.std_logic_1164.all;
 -- Entity 
 
 entity codeTranslator is port
-	( 
-		enable   : in std_logic;		
+	( 	
 		bitCount : in std_logic_vector(0 to 1);
 		char     : in std_logic_vector(0 to 3);	
 		number	 : out std_logic_vector(0 to 4)

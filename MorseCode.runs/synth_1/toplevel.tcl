@@ -16,10 +16,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/.Xil/Vivado-1564-DESKTOP-PHEMTHR/incrSyn}
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -44,6 +41,7 @@ read_vhdl -library xil_defaultlib {
   {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd}
   {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd}
   {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd}
+  {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/error_displayer.vhd}
   {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd}
   {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd}
   {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/minimux.vhd}

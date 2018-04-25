@@ -27,9 +27,6 @@ entity toplevel is port
 	( 
 		button, clk, rst	: in std_logic		; 	-- input description comment		
 		--speed_setting : in std_logic_vector(0 to 3);	
-		input_count : in std_logic_vector(0 to 1);
-		input_enabled : in std_logic;
-		letter        : in std_logic_vector(0 to 3);
 		led, an    : out std_logic_vector(0 to 3);
 		seg  	    : out std_logic_vector(0 to 6)			-- output description comment	
 	);
@@ -68,7 +65,6 @@ architecture toplevel_a of toplevel is
     
     component codeTranslator is port
         ( 
-            enable   : in std_logic;        
             bitCount : in std_logic_vector(0 to 1);
             char     : in std_logic_vector(0 to 3);    
             number     : out std_logic_vector(0 to 4)
@@ -89,6 +85,15 @@ architecture toplevel_a of toplevel is
             enabled             : out std_logic
         );
     end component;
+    
+    component error_display is port
+        ( 
+            enabled                 : in std_logic;
+            num                     : in std_logic_vector(0 to 3);        
+            bit_count               : in std_logic_vector(0 to 1);        
+            error                   : out std_logic
+        );
+    end component;
 	
 	-------------------------------------------------------
 	-- Internal Signal Declarations
@@ -101,6 +106,7 @@ architecture toplevel_a of toplevel is
 	signal counter_enabled : std_logic;
 	signal should_count_input : std_logic;
 	signal char : std_logic_vector(0 to 4);
+    signal has_error : std_logic;
 
 begin
 	
@@ -121,33 +127,32 @@ begin
 	       rst => rst,
 	       clk => clk,
 	       clken => input_finished,
-	       input => dot_dash
-	       --ps0 => stored_bits(0),
-	      -- ps1 => stored_bits(1),
-	       --ps2 => stored_bits(2),
-	       --ps3 => stored_bits(3)
+	       input => dot_dash,
+	       ps0 => stored_bits(0),
+	       ps1 => stored_bits(1),
+	       ps2 => stored_bits(2),
+	       ps3 => stored_bits(3)
 	   );
 	   
 	length_checker : twobitcounter port map
 	   (
 	       rst => rst,
 	       clk => clk,
-	       count => should_count_input
-	       --s0 => bit_count(0),
-	       --s1 => bit_count(1)
+	       count => should_count_input,
+	       s0 => bit_count(0),
+	       s1 => bit_count(1)
 	   );
 	   
 	enable_counter : enabler port map
 	   (
 	       clk => clk,
 	       rst => rst,
-	       button => button
-	       --enabled => counter_enabled
+	       button => button,
+	       enabled => counter_enabled
 	   );
 	   
 	character_getter : codeTranslator port map
 	   (
-	       enable => counter_enabled,
 	       bitCount => bit_count,
 	       char => stored_bits,
 	       number => char
@@ -158,6 +163,14 @@ begin
 	       B => char,
 	       Segs => seg
 	   );
+	   
+	get_error : error_display port map
+	   (
+	       enabled => counter_enabled,
+	       num => stored_bits,
+	       bit_count => bit_count,
+	       error => has_error
+	   );
 	
 	-------------------------------------------------------------
 	-- Begin Design Description of Gates and how to connect them
@@ -167,18 +180,13 @@ begin
 	get_speed(2) <= '1';
 	get_speed(3) <= '1';
 	
-	counter_enabled <= input_enabled;
-	bit_count <= input_count;
-	stored_bits <= letter;
-
-	
 	should_count_input <= counter_enabled AND input_finished;
 		
 	led <= stored_bits;
 	
 	an(0) <= NOT counter_enabled;
-	an(1) <= '1';
-	an(2) <= '1';
-	an(3) <= '1';
+	an(1) <= NOT has_error;
+	an(2) <= NOT has_error;
+	an(3) <= NOT has_error;
  			 
 end toplevel_a; -- .same name as the architecture

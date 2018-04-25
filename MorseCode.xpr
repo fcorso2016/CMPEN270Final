@@ -147,6 +147,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/CMPEN270Final/error_displayer.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/error_displayer.vhd"/>
+          <Attr Name="ImportTime" Val="1524608524"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/Downloads/four_bit_register.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/four_bit_register.vhd"/>

@@ -1,0 +1,323 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Apr 25 15:23:45 2018
+# Process ID: 1564
+# Current directory: D:/Users/Francesco Corso/Documents/School/CMPEN270Final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14428 D:\Users\Francesco Corso\Documents\School\CMPEN270Final\MorseCode.xpr
+# Log file: D:/Users/Francesco Corso/Documents/School/CMPEN270Final/vivado.log
+# Journal file: D:/Users/Francesco Corso/Documents/School/CMPEN270Final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/cryst/Documents/School/CMPEN270Final' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 806.137 ; gain = 88.117
+update_compile_order -fileset sources_1
+add_files -norecurse {{D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/MUX.vhd}}
+update_compile_order -fileset sources_1
+import_files -norecurse {{D:/Users/Francesco Corso/Documents/School/CMPEN270Final/minimux.vhd}}
+update_compile_order -fileset sources_1
+import_files -norecurse {{D:/Users/Francesco Corso/Documents/School/CMPEN270Final/bigmux.vhd}}
+update_compile_order -fileset sources_1
+import_files -norecurse {{D:/Users/Francesco Corso/Documents/School/CMPEN270Final/biggermux.vhd}}
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 20-1445] Cannot import file 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/MACHOMUX.vhd' on top of itself. Importing a file from the imported source directory can cause this problem.
+add_files -norecurse {{D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/MACHOMUX.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: toplevel
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'source' was cancelled
+2 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 976.133 ; gain = 112.395
+INFO: [Common 17-344] 'synth_design' was cancelled
+export_ip_user_files -of_objects  [get_files {{D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/decrementer.vhd}}] -no_script -reset -force -quiet
+remove_files  {{D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/decrementer.vhd}}
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: toplevel
+WARNING: [Synth 8-2490] overwriting previous definition of module AND2 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:14]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND2B1 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:26]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND2B1L [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:38]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND2B2 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:51]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND3 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:62]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND3B1 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:74]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND3B2 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:86]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND3B3 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:98]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND4 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:110]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND4B1 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:123]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND4B2 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:136]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND4B3 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:149]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND4B4 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:162]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND5 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:175]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND5B1 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:189]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND5B2 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:203]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND5B3 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:217]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND5B4 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:231]
+WARNING: [Synth 8-2490] overwriting previous definition of module AND5B5 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:245]
+WARNING: [Synth 8-2490] overwriting previous definition of module AUTOBUF [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:259]
+WARNING: [Synth 8-2490] overwriting previous definition of module BIBUF [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:270]
+WARNING: [Synth 8-2490] overwriting previous definition of module BITSLICE_CONTROL [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:280]
+WARNING: [Synth 8-2490] overwriting previous definition of module BSCANE2 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:424]
+WARNING: [Synth 8-2490] overwriting previous definition of module BSCAN_SPARTAN3 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:454]
+WARNING: [Synth 8-2490] overwriting previous definition of module BSCAN_SPARTAN3A [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:473]
+WARNING: [Synth 8-2490] overwriting previous definition of module BSCAN_SPARTAN6 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:494]
+WARNING: [Synth 8-2490] overwriting previous definition of module BSCAN_VIRTEX4 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:514]
+WARNING: [Synth 8-2490] overwriting previous definition of module BSCAN_VIRTEX5 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:531]
+WARNING: [Synth 8-2490] overwriting previous definition of module BSCAN_VIRTEX6 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:548]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUF [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:569]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFCE_LEAF [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:579]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFCE_ROW [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:594]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFG [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:609]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFGCE [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:619]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFGCE_1 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:634]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFGCE_DIV [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:645]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFGCTRL [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:663]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFGMUX [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:698]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFGMUX_1 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:711]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFGMUX_CTRL [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:724]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFGMUX_VIRTEX4 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:738]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFGP [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:752]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFG_GT [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:762]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFG_GT_SYNC [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:782]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFG_PS [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:798]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFH [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:808]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFHCE [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:818]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFIO [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:833]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFIO2 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:843]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFMR [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:861]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFMRCE [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:871]
+WARNING: [Synth 8-2490] overwriting previous definition of module BUFR [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:886]
+WARNING: [Synth 8-2490] overwriting previous definition of module CAPTUREE2 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:902]
+WARNING: [Synth 8-2490] overwriting previous definition of module CAPTURE_SPARTAN3 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:913]
+WARNING: [Synth 8-2490] overwriting previous definition of module CAPTURE_SPARTAN3A [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:923]
+WARNING: [Synth 8-2490] overwriting previous definition of module CAPTURE_VIRTEX4 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:933]
+WARNING: [Synth 8-2490] overwriting previous definition of module CAPTURE_VIRTEX5 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:943]
+WARNING: [Synth 8-2490] overwriting previous definition of module CAPTURE_VIRTEX6 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:953]
+WARNING: [Synth 8-2490] overwriting previous definition of module CARRY4 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:963]
+WARNING: [Synth 8-2490] overwriting previous definition of module CARRY8 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:981]
+WARNING: [Synth 8-2490] overwriting previous definition of module CFGLUT5 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:1000]
+WARNING: [Synth 8-2490] overwriting previous definition of module CMAC [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:1030]
+WARNING: [Synth 8-2490] overwriting previous definition of module CMACE4 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:1840]
+WARNING: [Synth 8-2490] overwriting previous definition of module DCIRESET [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:2756]
+WARNING: [Synth 8-2490] overwriting previous definition of module DCM [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:2766]
+WARNING: [Synth 8-2490] overwriting previous definition of module DCM_ADV [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:2812]
+WARNING: [Synth 8-2490] overwriting previous definition of module DCM_BASE [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:2883]
+WARNING: [Synth 8-2490] overwriting previous definition of module DCM_PS [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:2931]
+WARNING: [Synth 8-2490] overwriting previous definition of module DCM_SP [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:2989]
+WARNING: [Synth 8-2490] overwriting previous definition of module DNA_PORT [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3034]
+WARNING: [Synth 8-2490] overwriting previous definition of module DNA_PORTE2 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3048]
+WARNING: [Synth 8-2490] overwriting previous definition of module DPHY_DIFFINBUF [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3065]
+WARNING: [Synth 8-2490] overwriting previous definition of module DSP48 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3087]
+WARNING: [Synth 8-2490] overwriting previous definition of module DSP48A [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3160]
+WARNING: [Synth 8-2490] overwriting previous definition of module DSP48A1 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3234]
+WARNING: [Synth 8-2490] overwriting previous definition of module DSP48E [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3313]
+WARNING: [Synth 8-2490] overwriting previous definition of module DSP48E1 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3430]
+WARNING: [Synth 8-2490] overwriting previous definition of module DSP48E2 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3564]
+WARNING: [Synth 8-2490] overwriting previous definition of module EFUSE_USR [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3716]
+WARNING: [Synth 8-2490] overwriting previous definition of module FD [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3725]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDC [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3737]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDCE [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3750]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDCE_1 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3770]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDCP [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3784]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDCPE [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3801]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDCPE_1 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3819]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDCP_1 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3837]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDC_1 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3854]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDE [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3867]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDE_1 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3880]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDP [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3893]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDPE [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3906]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDPE_1 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3926]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDP_1 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3940]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDR [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3953]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDRE [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3966]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDRE_1 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:3986]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDRS [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:4000]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDRSE [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:4018]
+WARNING: [Synth 8-2490] overwriting previous definition of module FDRSE_1 [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:4038]
+INFO: [Common 17-14] Message 'Synth 8-2490' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1019.621 ; gain = 40.820
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'toplevel' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:40]
+INFO: [Synth 8-3491] module 'input_parser' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:27' bound to instance 'input_button' of component 'input_parser' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'input_parser' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:38]
+INFO: [Synth 8-3491] module 'clkdiv' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:24' bound to instance 'clock_divider' of component 'clkdiv' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'clkdiv' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv' (1#1) [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/clkdiv.vhd:32]
+INFO: [Synth 8-3491] module 'fourBitCounter' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:25' bound to instance 'counter' of component 'fourBitCounter' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'fourBitCounter' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:34]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder1' of component 'fulladder' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'fulladder' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'fulladder' (2#1) [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:40]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder2' of component 'fulladder' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:81]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder3' of component 'fulladder' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:89]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder4' of component 'fulladder' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:97]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result0' of component 'DFF270_re' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'dff270_re' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'dff270_re' (3#1) [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:39]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result1' of component 'DFF270_re' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:115]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result2' of component 'DFF270_re' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:124]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'result3' of component 'DFF270_re' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'fourBitCounter' (4#1) [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/counter.vhd:34]
+INFO: [Synth 8-3491] module 'userinput' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:26' bound to instance 'button_release' of component 'userinput' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'userinput' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:36]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'latch1' of component 'dff270_re' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:65]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'latch0' of component 'dff270_re' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'userinput' (5#1) [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/userinput.vhd:36]
+INFO: [Synth 8-3491] module 'comparator' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:27' bound to instance 'length_checker' of component 'comparator' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'comparator' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:36]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder0' of component 'fulladder' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:65]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder1' of component 'fulladder' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:74]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder2' of component 'fulladder' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:83]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder3' of component 'fulladder' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:92]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'adder4' of component 'fulladder' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'comparator' (6#1) [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/comparator.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'input_parser' (7#1) [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/InputParser.vhd:38]
+INFO: [Synth 8-3491] module 'four_bit_register' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:26' bound to instance 'shift_register' of component 'four_bit_register' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'four_bit_register' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:35]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit1' of component 'dff270_re' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:60]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit2' of component 'dff270_re' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:68]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit3' of component 'dff270_re' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:76]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'bit4' of component 'dff270_re' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'four_bit_register' (8#1) [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/four_bit_register.vhd:35]
+INFO: [Synth 8-3491] module 'twobitcounter' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:27' bound to instance 'length_checker' of component 'twobitcounter' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'twobitcounter' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:36]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder1' of component 'fulladder' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:74]
+INFO: [Synth 8-3491] module 'fulladder' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/fulladder.vhd:27' bound to instance 'fadder2' of component 'fulladder' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:83]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store1' of component 'DFF270_re' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:93]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store2' of component 'DFF270_re' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'twobitcounter' (9#1) [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/twobitcounter.vhd:36]
+INFO: [Synth 8-3491] module 'enabler' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:26' bound to instance 'enable_counter' of component 'enabler' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'enabler' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:35]
+INFO: [Synth 8-3491] module 'dff270_re' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/DFF270_re.vhd:28' bound to instance 'store_state' of component 'DFF270_re' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'enabler' (10#1) [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/enabler.vhd:35]
+INFO: [Synth 8-3491] module 'codeTranslator' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:27' bound to instance 'character_getter' of component 'codeTranslator' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'codeTranslator' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:38]
+INFO: [Synth 8-3491] module 'MUX_matrix' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/MACHOMUX.vhd:27' bound to instance 'mux_matrix0' of component 'MUX_matrix' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'MUX_matrix' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/MACHOMUX.vhd:39]
+INFO: [Synth 8-3491] module 'minimux' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/minimux.vhd:26' bound to instance 'single_bit' of component 'minimux' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/MACHOMUX.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'minimux' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/minimux.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'minimux' (11#1) [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/minimux.vhd:36]
+INFO: [Synth 8-3491] module 'MUX' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/MUX.vhd:27' bound to instance 'two_bits' of component 'MUX' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/MACHOMUX.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'MUX' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/MUX.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'MUX' (12#1) [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/MUX.vhd:37]
+INFO: [Synth 8-3491] module 'big_mux' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/bigmux.vhd:26' bound to instance 'three_bits' of component 'big_mux' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/MACHOMUX.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'big_mux' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/bigmux.vhd:36]
+INFO: [Synth 8-3491] module 'MUX' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/MUX.vhd:27' bound to instance 'MUX0' of component 'MUX' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/bigmux.vhd:60]
+INFO: [Synth 8-3491] module 'MUX' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/MUX.vhd:27' bound to instance 'MUX1' of component 'MUX' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/bigmux.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'big_mux' (13#1) [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/bigmux.vhd:36]
+INFO: [Synth 8-3491] module 'bigger_mux' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/biggermux.vhd:26' bound to instance 'four_bits' of component 'bigger_mux' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/MACHOMUX.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'bigger_mux' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/biggermux.vhd:36]
+INFO: [Synth 8-3491] module 'big_mux' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/bigmux.vhd:26' bound to instance 'mux0' of component 'big_mux' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/biggermux.vhd:60]
+INFO: [Synth 8-3491] module 'big_mux' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/bigmux.vhd:26' bound to instance 'mux1' of component 'big_mux' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/biggermux.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'bigger_mux' (14#1) [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/biggermux.vhd:36]
+INFO: [Synth 8-3491] module 'MUX' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/MUX.vhd:27' bound to instance 'final_selector' of component 'MUX' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/MACHOMUX.vhd:144]
+INFO: [Synth 8-256] done synthesizing module 'MUX_matrix' (15#1) [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/MACHOMUX.vhd:39]
+INFO: [Synth 8-3491] module 'MUX_matrix' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/MACHOMUX.vhd:27' bound to instance 'mux_matrix1' of component 'MUX_matrix' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:99]
+INFO: [Synth 8-3491] module 'MUX_matrix' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/MACHOMUX.vhd:27' bound to instance 'mux_matrix2' of component 'MUX_matrix' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:133]
+INFO: [Synth 8-3491] module 'MUX_matrix' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/MACHOMUX.vhd:27' bound to instance 'mux_matrix3' of component 'MUX_matrix' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:167]
+INFO: [Synth 8-3491] module 'MUX_matrix' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/MACHOMUX.vhd:27' bound to instance 'mux_matrix4' of component 'MUX_matrix' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:201]
+INFO: [Synth 8-256] done synthesizing module 'codeTranslator' (16#1) [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/CMPEN270Final/codeTranslator.vhd:38]
+INFO: [Synth 8-3491] module 'SevenSeg' declared at 'D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:28' bound to instance 'get_segment' of component 'SevenSeg' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'SevenSeg' [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'SevenSeg' (17#1) [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/Downloads/SevenSeg.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'toplevel' (18#1) [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/sources_1/imports/sources/toplevel.vhd:40]
+WARNING: [Synth 8-3917] design toplevel has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port an[3] driven by constant 1
+WARNING: [Synth 8-3331] design codeTranslator has unconnected port enable
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1053.246 ; gain = 74.445
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1053.246 ; gain = 74.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1053.246 ; gain = 74.445
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 7 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc]
+Finished Parsing XDC File [D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.srcs/constrs_1/imports/sources/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 1365.383 ; gain = 386.582
+91 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 1365.383 ; gain = 386.582
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Apr 25 16:22:55 2018] Launched synth_1...
+Run output will be captured here: D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.runs/synth_1/runme.log
+[Wed Apr 25 16:22:55 2018] Launched impl_1...
+Run output will be captured here: D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.1
+  **** Build date : Apr  4 2018-19:32:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183738939A
+set_property PROGRAM.FILE {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.runs/impl_1/toplevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 25 16:28:16 2018...

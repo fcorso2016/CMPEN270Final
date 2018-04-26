@@ -23,16 +23,16 @@ use ieee.std_logic_1164.all;
 
 -- Entity 
 
-entity enabler is port
+entity enable_led is port
 	( 
 		clk, rst, button	: in std_logic;	
 		enabled         	: out std_logic
 	);
-end enabler;
+end enable_led;
 ----------------------------------------------------------------------
 
 -- Architecture 
-architecture enabler_a of enabler is
+architecture enable_led_a of enable_led is
 ----------------------------------------------------------------------
 
 	--------------------------------------------------------
@@ -74,4 +74,4 @@ begin
 	enabled <= PS;
 	
  			 
-end enabler_a; -- .same name as the architecture
+end enable_led_a; -- .same name as the architecture

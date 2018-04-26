@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="36" Path="D:/Users/Francesco Corso/Documents/School/CMPEN270Final/MorseCode.xpr">
+<Project Version="7" Minor="36" Path="C:/Users/cryst/Documents/School/CMPEN270Final/MorseCode.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="fa16ad41e56f48af9d01a2a3939d75ca"/>
@@ -59,6 +59,14 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../sources/DFF270_re.vhd"/>
           <Attr Name="ImportTime" Val="1521234182"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/Debouncer_fast.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/Debouncer_fast.vhd"/>
+          <Attr Name="ImportTime" Val="1524760996"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -143,6 +151,14 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/enabler.vhd"/>
           <Attr Name="ImportTime" Val="1523376922"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/enabler.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/enabler.vhd"/>
+          <Attr Name="ImportTime" Val="1524764396"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>

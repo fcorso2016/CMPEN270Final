@@ -25,10 +25,11 @@ use ieee.std_logic_1164.all;
 
 entity toplevel is port
 	( 
-		button, clk, rst	: in std_logic		; 	-- input description comment		
-		--speed_setting : in std_logic_vector(0 to 3);	
-		led, an    : out std_logic_vector(0 to 3);
-		seg  	    : out std_logic_vector(0 to 6)			-- output description comment	
+		button, clk, rst	: in std_logic;		
+		speed_setting     : in std_logic_vector(0 to 3);	
+		led, an             : out std_logic_vector(0 to 3);
+		current_input       : out std_logic;
+		seg  	            : out std_logic_vector(0 to 6)	
 	);
 end toplevel;
 ----------------------------------------------------------------------
@@ -42,10 +43,11 @@ architecture toplevel_a of toplevel is
 	-------------------------------------------------------
 	component input_parser is port
         ( 
-            button, clk    : in std_logic;
-            speed_setting : in std_logic_vector(0 to 3);
-            store_out   : out std_logic;        
-            output      : out std_logic    
+            button, clk, rst : in std_logic;
+            speed_setting    : in std_logic_vector(0 to 3);
+            store_out        : out std_logic;        
+            output           : out std_logic;
+            current_input    : out std_logic    
         );
     end component;
     
@@ -79,7 +81,7 @@ architecture toplevel_a of toplevel is
         );
     end component;
     
-    component enabler  is port
+    component enable_led  is port
         (
             clk, rst, button	: in std_logic;	
             enabled             : out std_logic
@@ -103,7 +105,7 @@ architecture toplevel_a of toplevel is
 	signal dot_dash : std_logic;
 	signal stored_bits : std_logic_vector(0 to 3);
 	signal bit_count : std_logic_vector(0 to 1);
-	signal counter_enabled : std_logic;
+	signal counter_enabled, counter_enabled_alpha : std_logic;
 	signal should_count_input : std_logic;
 	signal char : std_logic_vector(0 to 4);
     signal has_error : std_logic;
@@ -117,9 +119,11 @@ begin
 	   (
 	       button => button,
 	       clk => clk,
+	       rst => rst,
 	       speed_setting => get_speed,
 	       store_out => input_finished,
-	       output => dot_dash
+	       output => dot_dash,
+	       current_input => current_input
 	   );
 	
 	shift_register : four_bit_register port map
@@ -143,13 +147,21 @@ begin
 	       s1 => bit_count(1)
 	   );
 	   
-	enable_counter : enabler port map
+	enable_counter_beta : enable_led port map
 	   (
 	       clk => clk,
 	       rst => rst,
-	       button => button,
-	       enabled => counter_enabled
+	       button => input_finished,
+	       enabled => counter_enabled_alpha
 	   );
+	   
+	enable_counter : enable_led port map
+       (
+           clk => clk,
+           rst => rst,
+           button => counter_enabled_alpha,
+           enabled => counter_enabled
+       );
 	   
 	character_getter : codeTranslator port map
 	   (
@@ -175,12 +187,12 @@ begin
 	-------------------------------------------------------------
 	-- Begin Design Description of Gates and how to connect them
 	-------------------------------------------------------------
-	get_speed(0) <= '0';
-	get_speed(1) <= '1';
-	get_speed(2) <= '1';
-	get_speed(3) <= '1';
+	get_speed(0) <= speed_setting(0);
+	get_speed(1) <= speed_setting(1);
+	get_speed(2) <= speed_setting(2);
+	get_speed(3) <= speed_setting(3);
 	
-	should_count_input <= counter_enabled AND input_finished;
+	should_count_input <= counter_enabled AND input_finished AND (bit_count(0) NAND bit_count(1));
 		
 	led <= stored_bits;
 	

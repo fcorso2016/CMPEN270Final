@@ -55,7 +55,6 @@ architecture comparator_a of comparator is
 	-------------------------------------------------------
 	signal not_B, sum : std_logic_vector(0 to 4);
 	signal carry : std_logic_vector(0 to 4);
-	signal overflow : std_logic;
 
 begin
 	
@@ -115,8 +114,7 @@ begin
 	not_B(2) <= NOT B(2);
 	not_B(3) <= NOT B(3);
 	
-	overflow <= carry(4) XNOR carry(3);
-	negative <= overflow OR sum(4);
+	negative <= sum(4);
 	
  			 
 end comparator_a; -- .same name as the architecture

@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Wed Apr 25 16:49:59 2018
-| Host         : DESKTOP-PHEMTHR running 64-bit major release  (build 9200)
+| Date         : Thu Apr 26 13:59:19 2018
+| Host         : DESKTOP-2J305LI running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file toplevel_control_sets_placed.rpt
 | Design       : toplevel
 | Device       : xc7a35t
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     2 |
-| Unused register locations in slices containing registers |     3 |
+| Number of unique control sets                            |     5 |
+| Unused register locations in slices containing registers |    13 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,8 +34,11 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      5 |            1 |
+|      1 |            1 |
+|      4 |            1 |
+|      6 |            1 |
 |      8 |            1 |
+|    16+ |            1 |
 +--------+--------------+
 
 
@@ -45,23 +48,26 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               5 |            2 |
+| No           | No                    | No                     |               1 |            1 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |               0 |            0 |
+| No           | Yes                   | No                     |              34 |           10 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               8 |            4 |
+| Yes          | Yes                   | No                     |               8 |            3 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+---------------------------------------------------+------------------+------------------+----------------+
-|  Clock Signal  |                   Enable Signal                   | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+----------------+---------------------------------------------------+------------------+------------------+----------------+
-|  clk_IBUF_BUFG |                                                   |                  |                2 |              5 |
-|  clk_IBUF_BUFG | input_button/button_release/latch1/input_finished | rst_IBUF         |                4 |              8 |
-+----------------+---------------------------------------------------+------------------+------------------+----------------+
++-----------------------------------+---------------------------------------------------+--------------------------------------+------------------+----------------+
+|            Clock Signal           |                   Enable Signal                   |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++-----------------------------------+---------------------------------------------------+--------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                    |                                                   |                                      |                1 |              1 |
+|  input_button/clock_divider/q_reg |                                                   | input_button/counter/result3/q_reg_0 |                2 |              4 |
+|  clk_IBUF_BUFG                    |                                                   | rst_IBUF                             |                2 |              6 |
+|  clk_IBUF_BUFG                    | input_button/button_release/latch1/input_finished | rst_IBUF                             |                3 |              8 |
+|  clk_IBUF_BUFG                    |                                                   | input_button/clock_divider/clear     |                6 |             24 |
++-----------------------------------+---------------------------------------------------+--------------------------------------+------------------+----------------+
 
 

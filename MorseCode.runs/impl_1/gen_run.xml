@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1524689304">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1524765456">
   <File Type="PWROPT-DCP" Name="toplevel_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="toplevel_power_routed.rpt"/>
   <File Type="PA-TCL" Name="toplevel.tcl"/>
@@ -69,6 +69,14 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../sources/DFF270_re.vhd"/>
         <Attr Name="ImportTime" Val="1521234182"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/Debouncer_fast.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/Debouncer_fast.vhd"/>
+        <Attr Name="ImportTime" Val="1524760996"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -153,6 +161,14 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/enabler.vhd"/>
         <Attr Name="ImportTime" Val="1523376922"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/enabler.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/enabler.vhd"/>
+        <Attr Name="ImportTime" Val="1524764396"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
